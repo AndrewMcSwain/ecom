@@ -1,0 +1,578 @@
+
+// ----
+// Sass (v3.3.14)
+// Compass (v1.0.1)
+// Breakpoint (v2.5.0)
+// Normalize SCSS (v3.0.2)
+// Susy (v2.1.3)
+// ----
+ 
+@import "susy";
+@import "normalize";
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed);
+ 
+$susy: (
+columns: 15,
+gutters:.001,
+debug:(image: show,
+output : overlay,)
+)
+;
+ 
+$primary_font: Nimbus Sans L Regular, Open Sans;
+$secondary_font: Helvetica;
+$binaryColor0: white;
+$binaryColor1: black;
+$primaryColor: #358394;
+$primaryColorDark: #1B414A;
+$offsetColor: #ED1C24;
+$offsetColor1Dark: #7C1A1A;
+$offsetColor2: #D81E9D;
+$greyColor1: #3F3C3C;
+ 
+.highlight1{
+background-color: $binaryColor1;
+}
+.highlight0{
+background-color: $binaryColor0;
+}
+.highlightOffset{
+background-color: $offsetColor;
+}
+ 
+ 
+/*create placeholders for vertical alignment increments*/
+ 
+ 
+%align-bottom-offset{
+position: relative;
+top: 60%;
+-webkit-transform: translateY(-60%);
+-ms-transform: translateY(-60%);
+transform: translateY(-60%);
+}
+%align-bottom{
+position: relative;
+top: 61%;
+-webkit-transform: translateY(-68%);
+-ms-transform: translateY(-68%);
+transform: translateY(-68%);
+}
+%align-middle-offset{
+position: relative;
+top: 20%;
+-webkit-transform: translateY(-20%);
+-ms-transform: translateY(68%);
+transform: translateY(68%);
+}
+%primaryColor{
+background-color: teal;
+}
+%debug{
+border: 1px solid red;
+}
+%bg-image {
+max-width: 100%;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+ 
+%color-box-1{
+background: rgb(27,65,74); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(27,65,74,1) 51%, rgba(18,44,50,1) 51%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(51%,rgba(27,65,74,1)), color-stop(51%,rgba(18,44,50,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(27,65,74,1) 51%,rgba(18,44,50,1) 51%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(27,65,74,1) 51%,rgba(18,44,50,1) 51%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(27,65,74,1) 51%,rgba(18,44,50,1) 51%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(27,65,74,1) 51%,rgba(18,44,50,1) 51%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b414a', endColorstr='#122c32',GradientType=0 ); /* IE6-9 */
+;}
+ 
+%color-box-2{
+background: rgb(91,154,168); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(91,154,168,1) 51%, rgba(53,131,148,1) 51%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(51%,rgba(91,154,168,1)), color-stop(51%,rgba(53,131,148,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(91,154,168,1) 51%,rgba(53,131,148,1) 51%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(91,154,168,1) 51%,rgba(53,131,148,1) 51%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(91,154,168,1) 51%,rgba(53,131,148,1) 51%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(91,154,168,1) 51%,rgba(53,131,148,1) 51%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b9aa8', endColorstr='#358394',GradientType=0 ); /* IE6-9 */
+}
+ 
+ 
+ 
+html{
+font-family: 'Open Sans';
+}
+ 
+ 
+#grid{
+@include container(15);
+@include background-grid;
+gutter-width: 2%;
+}
+ 
+/* */
+/* CONTAINERS */
+/* */
+ 
+#main_background_container{
+@extend %bg-image;
+@include span(15);
+height:1000px;
+float: right;
+background-image: url("http://i.imgur.com/6l3Mm1X.jpg");
+border: 1px solid red;
+;}
+#main_heading_container{
+@include span(7);
+@include push(2.3);
+height: 77%;
+}
+#info_container{
+float: left;
+background: rgba(200, 54, 54, 0.5);
+min-height: 100%;
+@include span(full);
+}
+ 
+#info_text_container{
+max-width: 100%;
+;
+}
+#info_time_container{
+max-width: 100%;
+;
+}
+#info_startday_container{
+max-width: 100%;
+;
+}
+ 
+#portrait_frame_container{
+position: relative;
+max-width: 100%;
+}
+#main_sidebar_container{/*not confining to one column*/
+position:relative;
+float: right;
+max-width: 100%;
+@include span(3.5);
+background-color: $binaryColor0;
+min-height:78%;
+}
+ 
+#CTA_top_container{
+margin-bottom: 0;
+float: left;
+background-color: $binaryColor1;
+@include span(9.333);
+min-height: 17%;
+}
+#main_divider{
+@include span(full);
+background-color: #181717;
+height: 5%;
+}
+#CTA_text_box{
+position:relative;
+@include span(2 of 9);
+background-color: $binaryColor0;
+min-height: 17%;
+}
+#CTA_textbox_abs{
+@extend %debug;
+position: absolute;
+z-index: 3;
+top: -23%;
+left: -22%;
+height:110%;
+width:130%;
+min-height: 28%;
+background-color: white;
+}
+ 
+ 
+ 
+/* */
+/* IMAGES */
+/* */
+ 
+#portrait{
+padding: 2%;
+max-width: 92%;
+transform: translate(2%);
+transition: all .5s;
+}
+#portrait:hover{
+brightness: (3);
+transform: scale(1.06, 1.06);
+}
+#signature{
+position:absolute;
+top:52%;
+left:49%;
+max-width: 90%;
+}
+ 
+#info_box_gradient_1{;}
+ 
+#CTA_top_text{
+@include span(5 of 9);
+color: $binaryColor0;
+}
+#CTA_top_button_text{
+position: absolute;
+top: 50%;
+text-align: center;
+}
+#aulas_container{
+background-position: center top;
+@include span(full);
+height:611px;
+}
+#aulas_container_top{
+@include span(full);
+height:40%;
+position:relative;
+@extend %bg-image;
+background-image: url("http://i.imgur.com/6Tv6r7F.png");
+}
+#aulas_container_bottom{
+height:60%;
+@include span(full);
+@extend %bg-image;
+background-image: url("http://i.imgur.com/YfxsPWu.jpg");
+;}
+ 
+ 
+/* */
+/* TEXT */
+/* */
+#aulas_heading_1{
+@include span(full);
+position: relative;
+margin-top:10%;
+font-size: 80px;
+z-index: 3;
+text-align: center;
+color: $binaryColor0;}
+#aulas_heading_1:before{
+@include span(full);
+content: "";
+position:relative;
+z-index: 1;
+background-color: $binaryColor0;
+margin-top: 2px ;
+height: 1em;
+}
+ 
+#aulas_heading_1:after{
+@include span(full);
+content:"";
+position: relative;
+z-index: 2;
+background-color: $binaryColor1;
+margin-top: -0.2em;
+height: 1.2em;
+}
+ 
+#aulas_subheading_1{
+@include span(full);
+//font-size
+z-index:2;
+text-align: center;
+vertical-align: bottom;
+bottom: 10%;
+color: $binaryColor0;
+}
+#aulas_heading_2{
+text-align: center;
+font-size: 40em;
+color: $binaryColor1;
+}
+#aulas_subheading_2{
+font-size: 60px;
+text-align: center;
+vertical-align: bottom;
+color:$binaryColor1;
+@extend %align-bottom-offset;
+}
+ 
+ 
+/* */
+/* DIVIDERS AND SHAPES */
+/* */
+#aulas_heading_band_1{
+@include span(full);
+height: 35%;
+position:relative;
+top: -40%;
+background-color: $binaryColor1;
+}
+ 
+*#aulas_heading_band_1:before{
+content:"";
+position:relative;
+top: -30%;//why the fuck do i have to use negatives? why does this start in the middle of the container if it's outside of the flow?
+background-color: $binaryColor0;
+@include span(full);
+height: 50%;
+display: block;
+position: relative;
+}
+ 
+#aulas_subheading_band{
+background-color: $binaryColor0;
+height: 10%;
+position:relative;
+bottom:0%;//not on the bottom even though it's the bottom of the dom and the other element is in position relative//
+}
+/*
+#aulas_subheading_2_band{
+background-color: $binaryColor0;
+height: 5%;
+}*/
+ 
+ 
+/******* THIRD SECTION *******/
+#aprende_container{
+height:373px;
+;
+}
+#aprende_heading_container{
+@include span(full);
+@extend %color-box-1;
+background-color: $primaryColorDark;
+height: 102px;
+}
+#aprende_subheading_container{
+@include span(full);
+@extend %color-box-2;
+height:100px;
+}
+#aprende_text_container{;}
+ 
+/* */
+/* TEXT */
+/* */
+ 
+#aprende_heading{
+color: $binaryColor1;
+}
+#aprende_subheading{
+color: $binaryColor1
+ 
+ 
+/* */
+/* CONTAINERS */
+/* */
+;
+}
+#aprende_text{
+color: $binaryColor0;
+}
+ 
+ 
+/* */
+/* DIVIDERS AND SHAPES */
+/* */
+#aprende_band{
+@include span(full);
+height:20%;
+z-index: 1;
+background-color: red;
+}//not showing up at all!!!
+ 
+ 
+#aprende_text_effect{background-color: grey ;} /*grey opacity*/
+ 
+ 
+/******* FOURTH SECTION *******/
+ 
+ 
+/* */
+/* CONTAINERS */
+/* */
+ 
+#fale_container{
+@include span(full);
+background-color: $binaryColor1;
+height: 800px;
+}
+ 
+ 
+#CTA_middle_container{
+background-color: $binaryColor0;
+margin: 0 auto;
+width: 15em;
+height: 7em;
+border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
+border: 2px solid #ffffff;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+}
+ 
+/* */
+/* TEXT */
+/* */
+/*colors not working*/
+#CTA_middle_text{
+margin: 0 auto;
+-webkit-transform: translate(0%,10%);
+transform: translate(0%,10%);
+padding-top: 12%;
+top: 7%;
+background-color: $offsetColor2;
+height: 85%;
+width: 80%;
+color: $binaryColor1;
+text-align: center;
+box-sizing: border-box;
+}
+/*#CTA_middle_text:hover{
+color: $binaryColor0;
+transform: scale(1.1);
+transition: scale 1s;}*/
+ 
+#fale_heading_1{
+color: $binaryColor1;
+}
+#fale_heading_2{
+color: $binaryColor1;
+}
+#fale_subheading_1{
+color: $binaryColor1;
+}
+#fale_subheading_2{
+color: $binaryColor1;
+}
+ 
+ 
+/* */
+/* BUTTONS */
+/* */
+ 
+#CTA_middle{
+color: offsetColor1;
+}
+/*#CTA_middle_button_effect{
+color: $binaryColor1;
+}*/
+ 
+ 
+#fale_textbox_1{
+@include span(full);
+background-color: $binaryColor0;
+}
+#fale_textbox_2{
+@include span(full);
+background-color: $offsetColor1Dark;
+}
+#fale_textbox_3{
+@include span(full);
+background-color: $greyColor1;
+}
+ 
+/******* FIFTH SECTION *******/
+ 
+/* */
+/* CONTAINERS */
+/* */
+ 
+#melhor_container{
+@include span(full);
+height: 535px;
+background-color: $binaryColor1;
+}
+ 
+/* */
+/* TEXT */
+/* */
+#melhor_heading{
+background-color: $binaryColor1;
+}
+#melhor_subheading{
+color: $binaryColor0;
+}
+ 
+ 
+ 
+/******* SIXTH SECTION *******/
+ 
+/* */
+/* CONTAINERS */
+/* */
+ 
+#conquistar_container{
+@include span(full);
+height: 900px;
+}
+#heading_container{
+background-color:$binaryColor1;
+}
+#subheading_container{
+background-color: $binaryColor0;
+}
+#p_container{
+@extend %bg-image;
+background-image: url("http://i.imgur.com/mWo7x03.pnge.jpg");/*not showing image*/
+}
+ 
+#conquistar_heading{
+color: $binaryColor0;
+}
+ 
+#final_container{
+;
+}
+#final_form_container{
+background-color: white;
+}
+ 
+ 
+/* */
+/* TEXT */
+/* */
+ 
+#final_heading{
+;
+color: $binaryColor0;
+}
+ 
+#final_form_text{
+color: black;
+}
+#final_button_text{
+color: $binaryColor0;
+}
+ 
+ 
+/* */
+/* BUTTONS */
+/* */
+ 
+#final_form_button{
+background-color: $offsetColor2;
+}
+#social_media_buttons{;}
+ 
+ 
+/* */
+/* DIVIDERS AND SHAPES */
+/* */
+ 
+#final_heading_band{
+background-color: black;
+height: 100px;
+color:white;
+/*set % height*/
+/*put this at the top of the container*/
+}
+#final_emaiL_input{
+color: $binaryColor0;
+}

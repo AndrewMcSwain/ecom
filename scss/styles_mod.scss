@@ -1,0 +1,39 @@
+// SCSS
+@import "susy";
+@import "normalize";
+
+$susy:(
+  columns: 12, 
+  container: 1140px,
+  debug: (image: show), 
+  global-box-sizing: border-box
+  );
+
+.wrap{
+	@include container();
+	height: 50vh;
+   }
+
+.content {
+ margin-top: 10vh;
+ height: 80vh;
+ background: rgba(113, 218, 210, 0.8); 	
+  }
+
+
+.sidebar {
+ margin-top: 10vh;
+ height: 40vh;
+ background: rgba(250, 231, 179, 0.8);
+ @include span(1 of 4 last);
+}
+
+h2 {
+ padding: 1rem 0;
+ text-align: center;
+ color: #555;
+}
+
+.inner-content {
+  @include span(4); }
+	
