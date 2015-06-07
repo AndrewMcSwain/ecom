@@ -10,28 +10,30 @@
 <main id="grid">
 <section id="main_background_container">
 	<img id="main_side_img" src="images/background-1c.png"><img>
-	<div id="main_main_container">
+	<div id="main_primary_container">
 		<div id="main_heading_container">
 			<h1 id="main_heading" >INTENSIVAO</h1>
 		</div>
 		<div id="main_subheading_container">	
 			<h2 id="main_subheading">DE INGLES</h2>
 		</div>
-		<div id="info_container">
-			<div id="info_text_container">
-				<h1 id="info_text_place" class="penis_breath">Paulista</h1>
-				<h2 id="info_text_day" class="penis_breath">Sabados</h2>
+		<div id="info_primary_container">
+			<div id="info_container">
+				<div id="info_text_container">
+					<h1 id="info_text_place" class="penis_breath">Paulista</h1>
+					<h2 id="info_text_day" class="penis_breath">Sabados</h2>
+				</div>
+				<div id="info_time_container">
+					<p class="info_text_time" id="info_text_time">8h00 - 11h00</p>
+					<p class="info_text_time_2" id="info_text_time2">12h00 - 15h00</p>
+				</div>
+				<div id="info_startday_container">
+					<h2 id="info_text_startday_explain" class="penis_breath">turmas começam</h2>
+					<h1 id="info_text_startday" class="penis_breath">10 de Maio</h1>
+				</div>
 			</div>
-			<div id="info_time_container">
-				<h3 id="info_text_time" class="penis_breath">8h00 - 11h00</h3>
-				<h3 id="info_text_time_2" class="penis_breath">12h00 - 15h00</h3>
-			</div>
-			<div id="info_startday_container">
-				<h2 id="info_text_startday_explain" class="penis_breath">turmas começam</h2>
-				<h1 id="info_text_startday" class="penis_breath">10 de Maio</h1>
-			</div>
-		<div id="info_box_1"></div>
 		</div>
+		<div id="info_box_1"></div>
 	</div>
 	<div id="main_sidebar_container">
 		<h3 id="main_sidebar_subheading">com Andrew</h3>
@@ -115,10 +117,10 @@ de aprender<br> algo,</h1></span>
 <script type="text/javascript">
 $("#main_heading").fitText(.6);
 $("#main_subheading").fitText(1.2);
-$('#info_text_place').fitText(.7);
-$('#info_text_day').fitText(.9);
-$('#info_text_time').fitText(.1);
-$('#info_text_time_2').fitText(1.7);
-$('#info_text_startday_explain').fitText(1);
+$('#info_text_place').fitText(1);
+$('#info_text_day').fitText();
+$('#info_text_time').fitText();
+$('#info_text_time_2').fitText();
+$('#info_text_startday_explain').fitText();
 $('#info_text_startday').fitText();
 </script>

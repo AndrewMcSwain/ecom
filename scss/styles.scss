@@ -142,7 +142,7 @@ height: 65%;
 @include span(2.4);
 }
 
-#main_main_container{
+#main_primary_container{
 @include span(6.6);
 background-image: url('../images/background-2b.png');
 background-position: top;
@@ -161,11 +161,20 @@ height: 91.2%;
 }
 
 #info_container{
-position:relative;
+position: relative;
+z-index: 2;
 float: left;
-min-height: 80%;
-@include span(full);
+height: 100%;
+@include span(15 of 15)
 
+}
+
+#info_primary_container{
+float: left;
+display: inline-block;
+position:relative;
+height:95%;
+width: 80%;
 }
 
 /*#info_container:before{
@@ -176,12 +185,14 @@ margin-left:0;
 }*/
 
 #info_text_container{
+z-index:2;
 position: realtive;
-max-width: 100%;
+width: 100%;
 ;
 }
 #info_time_container{
-max-width: 100%;
+display: inline-block;
+width: 100%;
 ;
 }
 #info_startday_container{
@@ -193,7 +204,8 @@ max-width: 100%;
 position: relative;
 max-width: 100%;
 }
-#main_sidebar_container{/*not confining to one column*/
+
+#main_sidebar_container{
 position:relative;
 float: left;
 max-width: 100%;
@@ -235,8 +247,7 @@ height: 19.2%;
 #info_text_place{
 	position:relative;
 	padding: 0;
-	margin-bottom: 0;
-	z-index: 1;
+	margin-bottom: 0;;
 	top: 5%;
 	text-align: center;
 	font-weight: bold;
@@ -245,25 +256,43 @@ height: 19.2%;
 }
 
 #info_text_day{
+	display: block;
+	position: relative;
 	text-align:center;
 	font-weight:bold;
-	margin-top: -5%;
+	top: 20%;
 	z-index:1;
 	font-size: 0.75em;
 	
 }
+.info_text_time{
+	z-index: 5;
+	display: inline-block;
+	width:100%;
+	color: $binaryColor0;
+	font-size:.3em;	
+}
+
 #info_text_time{
-	display: inline;
+	display: inline-block;
+	width:100%;
 	color: $binaryColor0;
 	font-size:.3em;
 }
+#info_text_time2{
+	display: inline-block;
+	width:100%;
+	color: $binaryColor0;
+	font-size:.3em;
+}
+
 
 #info_box_1{
 	position: absolute;
 	z-index: 0;
 	width:100%;
 	top: 0;
-	height: 93%;
+	height: 80%;
 	background-color: #000000;
 	-webkit-filter: opacity(34%);
 	filter: opacity(34%);
