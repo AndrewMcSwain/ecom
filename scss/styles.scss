@@ -47,7 +47,7 @@ background-color: $binaryColor0;
 background-color: $offsetColor;
 }
  
- 
+
 /*create placeholders for vertical alignment increments*/
  
  
@@ -107,16 +107,23 @@ background: linear-gradient(to bottom, rgba(91,154,168,1) 51%,rgba(53,131,148,1)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b9aa8', endColorstr='#358394',GradientType=0 ); /* IE6-9 */
 }
 
- 
 html{
-font-family: 'Open Sans';
+font-family: 'nimbus_sans_lregular';
 }
  
- 
+h1{margin:0;
+}
+
+h2{margin:0;
+} 
+
+.penis_breath{
+	opacity: 1;
+}
+
 #grid{
 @include container(15);
 @include background-grid;
-gutter-width: 2%;
 }
  
 /* */
@@ -135,7 +142,7 @@ height: 65%;
 @include span(2.4);
 }
 
-#main_heading_container{
+#main_main_container{
 @include span(6.6);
 background-image: url('../images/background-2b.png');
 background-position: top;
@@ -151,16 +158,25 @@ background-repeat: no-repeat;
 @include span(2.6 last);	
 @include cf;
 height: 91.2%;
-
 }
 
 #info_container{
+position:relative;
 float: left;
-min-height: 90%;
+min-height: 80%;
 @include span(full);
+
 }
- 
+
+/*#info_container:before{
+position:absolute;
+width:200%;
+margin-right:0;
+margin-left:0;
+}*/
+
 #info_text_container{
+position: realtive;
 max-width: 100%;
 ;
 }
@@ -190,14 +206,87 @@ min-height:65%;
 float: left;
 background-color: $binaryColor1;
 @include span(9.333);
-height: 26.2%;
+height: 19.2%;
 }
+
+#main_heading{
+	position: relative;
+	text-align: right;
+	font-size: 600%;
+	margin-bottom: 3px;
+}
+
+#main_subheading_container{
+	height: auto;
+	position: relative;
+	text-align: right;
+	font-size: 600%;
+}
+
+#main_subheading{
+	position: relative;
+	display: block;
+	margin-top: -5%;
+	font-size: 23%;
+	text-align: right;
+	font-family:url('nimbus_sans_lreguital');
+}
+
+#info_text_place{
+	position:relative;
+	padding: 0;
+	margin-bottom: 0;
+	z-index: 1;
+	top: 5%;
+	text-align: center;
+	font-weight: bold;
+	color: $binaryColor0;
+	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+
+#info_text_day{
+	text-align:center;
+	font-weight:bold;
+	margin-top: -5%;
+	z-index:1;
+	font-size: 0.75em;
+	
+}
+#info_text_time{
+	display: inline;
+	color: $binaryColor0;
+	font-size:.3em;
+}
+
+#info_box_1{
+	position: absolute;
+	z-index: 0;
+	width:100%;
+	top: 0;
+	height: 93%;
+	background-color: #000000;
+	-webkit-filter: opacity(34%);
+	filter: opacity(34%);
+    border: 5px solid rgb(0, 255, 0);
+    border: 5px solid rgba(255, 255, 255, 1);
+	border-bottom: none;
+}
+
+#main_sidebar_box{
+	position: absolute;
+	height:80%;
+	bottom:0%;
+}
+
+
+
 #main_divider{
 @include span(full);
 background-color: #181717;
 height: 11%;
 margin-bottom: 0;
 }
+
 #CTA_text_box{
 position:relative;
 @include span(1 of 9);
@@ -242,8 +331,8 @@ max-width: 90%;
  
 #info_box_gradient_1{;}
  
-#CTA_top_text{
-@include span(5 of 9);
+#CTA_top_text{	
+@include span(5);
 color: $binaryColor0;
 }
 #CTA_top_button_text{
@@ -251,11 +340,13 @@ position: absolute;
 top: 50%;
 text-align: center;
 }
+
 #aulas_container{
 background-position: center top;
 @include span(full);
 height:611px;
 }
+
 #aulas_container_top{
 @include span(full);
 height:40%;
@@ -263,6 +354,7 @@ position:relative;
 @extend %bg-image;
 background-image: url("http://i.imgur.com/6Tv6r7F.png");
 }
+
 #aulas_container_bottom{
 height:60%;
 @include span(full);
@@ -277,7 +369,7 @@ background-image: url("http://i.imgur.com/YfxsPWu.jpg");
 #aulas_heading_1{
 @include span(full);
 position: relative;
-margin-top:10%;
+margin-top: 2%;
 font-size: 80px;
 z-index: 6;
 text-align: center;
@@ -289,16 +381,17 @@ content: "";
 position: absolute;
 z-index: -10 ;
 background-color: $binaryColor0;
-height: 1em;
-top: .05em;
-left: -3em;
+height: 0.6em;
+top: 0.8em;
+left: 0em;
+right: 0em;
 }
  
 #aulas_heading_1:after{
 @include span(full);
 content:"";
 position: relative;
-z-index: 4;
+z-index: -9;
 background-color: $binaryColor1;
 margin-top: -0.2em;
 height: 1.2em;
@@ -306,20 +399,22 @@ height: 1.2em;
  
 #aulas_subheading_1{
 @include span(full);
+position:relative;
+z-index: 20;
 //font-size
-z-index:2;
 text-align: center;
-vertical-align: bottom;
-bottom: 10%;
+top: -70%;
 color: $binaryColor0;
 }
 #aulas_heading_2{
+	position: relative;
 text-align: center;
-font-size: 40em;
+font-size: 20em;
 color: $binaryColor1;
+bottom: 60%;
 }
 #aulas_subheading_2{
-font-size: 60px;
+font-size: 3em;
 text-align: center;
 vertical-align: bottom;
 color:$binaryColor1;
@@ -341,7 +436,7 @@ background-color: $binaryColor1;
 #aulas_heading_band_1:before{
 content:"";
 position:relative;
-top: -30%;//why the fuck do i have to use negatives? why does this start in the middle of the container if it's outside of the flow?
+top: -30%;
 background-color: $binaryColor0;
 @include span(full);
 height: 50%;
@@ -364,21 +459,23 @@ height: 5%;
  
 /******* THIRD SECTION *******/
 #aprende_container{
-height:373px;
-;
+height:auto;
 }
 #aprende_heading_container{
 @include span(full);
 @extend %color-box-1;
 background-color: $primaryColorDark;
-height: 102px;
+height: auto;
 }
 #aprende_subheading_container{
 @include span(full);
 @extend %color-box-2;
-height:100px;
+height:auto;
 }
-#aprende_text_container{;}
+#aprende_container_text{
+	background-color: $binaryColor1;
+	@include span(full);
+	height: auto;}
  
 /* */
 /* TEXT */
@@ -386,12 +483,11 @@ height:100px;
  
 #aprende_heading{
 @include span(full);
-margin-bottom: 0;
-margin-left: auto;
-margin-right: auto;
+text-align: center;
 color: $binaryColor1;
 }
 #aprende_subheading{
+text-align: center;
 color: $binaryColor1
  
  
@@ -401,6 +497,7 @@ color: $binaryColor1
 ;
 }
 #aprende_text{
+text-align: center;
 color: $binaryColor0;
 }
  
@@ -429,7 +526,7 @@ background-color: red;
 #fale_container{
 @include span(full);
 background-color: $binaryColor1;
-height: 800px;
+height: auto;
 }
  
  
@@ -469,6 +566,7 @@ transform: scale(1.1);
 transition: scale 1s;}*/
  
 #fale_heading_1{
+	@include span(2);
 color: $binaryColor1;
 }
 #fale_heading_2{

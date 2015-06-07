@@ -1,24 +1,36 @@
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+
 <link href='css/styles.css' rel='stylesheet' type='text/css'>
+<link href='fonts/stylesheet.css' rel='stylesheet'>
+
 <main id="grid">
 <section id="main_background_container">
 	<img id="main_side_img" src="images/background-1c.png"><img>
-	<div id="main_heading_container">
-		<h1 id="main_heading">INTENSIVAO</h1>
-		<h2 id="main_subheading">DE INGLES</h2>
+	<div id="main_main_container">
+		<div id="main_heading_container">
+			<h1 id="main_heading" >INTENSIVAO</h1>
+		</div>
+		<div id="main_subheading_container">	
+			<h2 id="main_subheading">DE INGLES</h2>
+		</div>
 		<div id="info_container">
 			<div id="info_text_container">
-				<h1 id="info_text_place">Paulista</h1>
-				<h2 id="info_text_day">Sabados</h2>
+				<h1 id="info_text_place" class="penis_breath">Paulista</h1>
+				<h2 id="info_text_day" class="penis_breath">Sabados</h2>
 			</div>
 			<div id="info_time_container">
-				<h3 id="info_text_time">8h00 - 11h00</h3>
-				<h3 id="info_text_time_2">12h00 - 15h00</h3>
+				<h3 id="info_text_time" class="penis_breath">8h00 - 11h00</h3>
+				<h3 id="info_text_time_2" class="penis_breath">12h00 - 15h00</h3>
 			</div>
 			<div id="info_startday_container">
-				<h2 id="info_text_startday_explain">turmas começam</h2>
-				<h1 id="info_text_startday">10 de Maio</h1>
+				<h2 id="info_text_startday_explain" class="penis_breath">turmas começam</h2>
+				<h1 id="info_text_startday" class="penis_breath">10 de Maio</h1>
 			</div>
+		<div id="info_box_1"></div>
 		</div>
 	</div>
 	<div id="main_sidebar_container">
@@ -97,3 +109,16 @@ de aprender<br> algo,</h1></span>
 </div>
 </section>
 </main>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="jquery.fittext.js"></script>
+<script type="text/javascript">
+$("#main_heading").fitText(.6);
+$("#main_subheading").fitText(1.2);
+$('#info_text_place').fitText(.7);
+$('#info_text_day').fitText(.9);
+$('#info_text_time').fitText(.1);
+$('#info_text_time_2').fitText(1.7);
+$('#info_text_startday_explain').fitText(1);
+$('#info_text_startday').fitText();
+</script>

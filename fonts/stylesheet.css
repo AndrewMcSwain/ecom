@@ -47,6 +47,51 @@
 
 }
 
+@font-face {
+    font-family: 'nimbus_roman_no9_lregular';
+    src: url('nimbusromno9l-regu-webfont.eot');
+    src: url('nimbusromno9l-regu-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nimbusromno9l-regu-webfont.woff2') format('woff2'),
+         url('nimbusromno9l-regu-webfont.woff') format('woff'),
+         url('nimbusromno9l-regu-webfont.ttf') format('truetype'),
+         url('nimbusromno9l-regu-webfont.svg#nimbus_roman_no9_lregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'nimbus_sans_lreguital';
+    src: url('nimbussanl-reguital-webfont.eot');
+    src: url('nimbussanl-reguital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nimbussanl-reguital-webfont.woff2') format('woff2'),
+         url('nimbussanl-reguital-webfont.woff') format('woff'),
+         url('nimbussanl-reguital-webfont.ttf') format('truetype'),
+         url('nimbussanl-reguital-webfont.svg#nimbus_sans_lreguital') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'nimbus_sans_lbolditalic';
+    src: url('nimbussanl-boldital-webfont.eot');
+    src: url('nimbussanl-boldital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nimbussanl-boldital-webfont.woff2') format('woff2'),
+         url('nimbussanl-boldital-webfont.woff') format('woff'),
+         url('nimbussanl-boldital-webfont.ttf') format('truetype'),
+         url('nimbussanl-boldital-webfont.svg#nimbus_sans_lbolditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 
 
@@ -58,6 +103,48 @@
          url('nimbussanl-regu-webfont.woff') format('woff'),
          url('nimbussanl-regu-webfont.ttf') format('truetype'),
          url('nimbussanl-regu-webfont.svg#nimbus_sans_lregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'nimbus_sans_lregular';
+    src: url('nimbussanl-regu-webfont.eot');
+    src: url('nimbussanl-regu-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nimbussanl-regu-webfont.woff2') format('woff2'),
+         url('nimbussanl-regu-webfont.woff') format('woff'),
+         url('nimbussanl-regu-webfont.ttf') format('truetype'),
+         url('nimbussanl-regu-webfont.svg#nimbus_sans_lregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nimbus_sans_lboldcond';
+    src: url('nimbussanl-boldcond-webfont.eot');
+    src: url('nimbussanl-boldcond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nimbussanl-boldcond-webfont.woff2') format('woff2'),
+         url('nimbussanl-boldcond-webfont.woff') format('woff'),
+         url('nimbussanl-boldcond-webfont.ttf') format('truetype'),
+         url('nimbussanl-boldcond-webfont.svg#nimbus_sans_lboldcond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'nimbus_sans_lbold';
+    src: url('nimbussanl-bold-webfont.eot');
+    src: url('nimbussanl-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nimbussanl-bold-webfont.woff2') format('woff2'),
+         url('nimbussanl-bold-webfont.woff') format('woff'),
+         url('nimbussanl-bold-webfont.ttf') format('truetype'),
+         url('nimbussanl-bold-webfont.svg#nimbus_sans_lbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
