@@ -141,7 +141,7 @@ float: right;
 ;}
 
 #main_side_img{
-height: 65%;	
+height: 60%;	
 @include span(2.4);
 }
 
@@ -150,7 +150,7 @@ height: 65%;
 background-image: url('../images/background-2b.png');
 background-position: top;
 background-size: cover;
-height: 65%;
+height: 60%;
 }
 
 #main_border_container{
@@ -217,7 +217,7 @@ float: left;
 max-width: 100%;
 @include span(3.4);
 background-color: $binaryColor0;
-min-height: 65%;
+height: 60%;
 }
  
 #CTA_top_container{

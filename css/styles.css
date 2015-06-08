@@ -492,7 +492,7 @@ p {
   float: right; }
 
 #main_side_img {
-  height: 65%;
+  height: 60%;
   width: 15.99441%;
   float: left;
   margin-right: 0.00666%; }
@@ -504,7 +504,7 @@ p {
   background-image: url("../images/background-2b.png");
   background-position: top;
   background-size: cover;
-  height: 65%; }
+  height: 60%; }
 
 #main_border_container {
   background-image: url(../images/background-4.png);
@@ -570,7 +570,7 @@ margin-left:0;
   float: left;
   margin-right: 0.00666%;
   background-color: white;
-  min-height: 65%; }
+  height: 60%; }
 
 #CTA_top_container {
   float: left;
