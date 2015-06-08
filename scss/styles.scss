@@ -191,7 +191,6 @@ margin-left:0;
 z-index: 2;
 position: realtive;
 width: 100%;
-;
 }
 #info_time_container{
 margin-top: 2%;
@@ -201,8 +200,9 @@ text-align: center;
 width: 100%;
 ;
 }
+
 #info_startday_container{
-max-width: 100%;
+width: 100%;
 ;
 }
  
@@ -282,9 +282,9 @@ text-align: center;
 vertical-align:top;
 z-index: 5;
 display: inline-block;
-width:50%;
+width: 50%;
 color: $binaryColor0;	
-font-size: 2em;
+font-size: 1.4em;
 }
 
 #info_text_time_1{;
@@ -292,6 +292,46 @@ font-size: 2em;
 
 #info_text_time_2{;
 
+}
+
+#info_text_startday_explain{
+display: inline-block;
+width: 100%;
+text-align: center;
+margin: 0 auto;
+font-size: 2em;
+color: $binaryColor0;
+}
+#info_text_startday{
+position: relative;
+display: inline-block;
+text-align:center;
+width: 100%;
+
+z-index: 5;
+color: $binaryColor0;
+font-size: 3.8em;
+}
+#info_text_startday:before{
+position: absolute;
+left: 10%;
+content: '';
+z-index: -1;
+background-color: $binaryColor1;
+border: 3px solid white;
+height: 100%;
+width: 79%;	
+}
+
+#info_text_startday:after{
+	content: '';
+	z-index: -2;
+	position: absolute;
+	background-color:black;
+	height: 200%;
+	width: 70%;
+	left: 16%;
+	top: 60%;
 }
 
 #info_box_1{
