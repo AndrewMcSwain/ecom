@@ -427,6 +427,9 @@ h1 {
 h2 {
   margin: 0; }
 
+p {
+  margin: 0; }
+
 .penis_breath {
   opacity: 1; }
 
@@ -531,8 +534,8 @@ h2 {
   float: left;
   display: inline-block;
   position: relative;
-  height: 95%;
-  width: 90%; }
+  height: 100%;
+  width: 100%; }
 
 /*#info_container:before{
 position:absolute;
@@ -546,7 +549,10 @@ margin-left:0;
   width: 100%; }
 
 #info_time_container {
+  margin-top: 2%;
+  margin-bottom: 2%;
   display: inline-block;
+  text-align: center;
   width: 100%; }
 
 #info_startday_container {
@@ -608,17 +614,8 @@ margin-left:0;
   color: white;
   text-shadow: rgba(0, 0, 0, 0.29804) 0px 5px 0px; }
 
-#info_text_place2 {
-  position: relative;
-  padding: 0;
-  margin-bottom: 0;
-  top: 5%;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-  text-shadow: rgba(0, 0, 0, 0.29804) 0px 5px 0px; }
-
 #info_text_day {
+  margin-top: -3.5%;
   display: block;
   position: relative;
   text-align: center;
@@ -628,23 +625,13 @@ margin-left:0;
   font-size: 0.75em; }
 
 .info_text_time {
+  text-align: center;
+  vertical-align: top;
   z-index: 5;
   display: inline-block;
-  width: 100%;
+  width: 50%;
   color: white;
-  font-size: .3em; }
-
-#info_text_time {
-  display: inline-block;
-  width: 100%;
-  color: white;
-  font-size: .3em; }
-
-#info_text_time2 {
-  display: inline-block;
-  width: 100%;
-  color: white;
-  font-size: .3em; }
+  font-size: 2em; }
 
 #info_box_1 {
   position: absolute;
