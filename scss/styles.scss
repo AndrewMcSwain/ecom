@@ -221,6 +221,7 @@ min-height: 65%;
 }
  
 #CTA_top_container{
+position: relative;
 float: left;
 background-color: $binaryColor1;
 @include span(9.333);
@@ -407,9 +408,35 @@ max-width: 90%;
  
 #info_box_gradient_1{;}
  
+.main_sidebar_subheading{
+	margin: 0;
+	display: inline-block;
+	text-align: left;
+	color: $primaryColor;
+	font-size: 3em;
+	padding-right: 6.2%;
+	padding-left: 4%;
+}
+
+#main_sidebar_subheading1{
+	margin-top: 26%;
+	;
+}
+#main_sidebar_subheading2{
+ margin-top: -6.5%;
+ padding-left: 4.95%
+} 
+
 #CTA_top_text{	
-@include span(5);
+@include push(6 of 15);
+@include span(8);
+display:inline-block;
+position: absolute;
+z-index: 10;
+top: 4%;
 color: $binaryColor0;
+text-align: right;
+font-size: 4em;
 }
 #CTA_top_button_text{
 position: absolute;
@@ -479,15 +506,15 @@ position:relative;
 z-index: 20;
 //font-size
 text-align: center;
-top: -70%;
+top: -35%;
 color: $binaryColor0;
 }
 #aulas_heading_2{
 	position: relative;
 text-align: center;
-font-size: 20em;
+font-size: 30em;
 color: $binaryColor1;
-bottom: 60%;
+bottom: 5%;
 }
 #aulas_subheading_2{
 font-size: 3em;
