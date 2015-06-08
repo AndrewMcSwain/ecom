@@ -532,7 +532,7 @@ h2 {
   display: inline-block;
   position: relative;
   height: 95%;
-  width: 80%; }
+  width: 90%; }
 
 /*#info_container:before{
 position:absolute;
@@ -574,6 +574,10 @@ margin-left:0;
   margin-right: 0.00666%;
   height: 19.2%; }
 
+#main_heading_container {
+  position: relative;
+  width: 100%; }
+
 #main_heading {
   position: relative;
   text-align: right;
@@ -595,6 +599,16 @@ margin-left:0;
   font-family: url("nimbus_sans_lreguital"); }
 
 #info_text_place {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
+  top: 5%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.29804) 0px 5px 0px; }
+
+#info_text_place2 {
   position: relative;
   padding: 0;
   margin-bottom: 0;
