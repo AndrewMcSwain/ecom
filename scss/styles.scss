@@ -472,8 +472,8 @@ background-image: url("http://i.imgur.com/YfxsPWu.jpg");
 #aulas_heading_1{
 @include span(full);
 position: relative;
-margin-top: 2%;
-font-size: 80px;
+margin-top: 5%;
+font-size: 4em;
 z-index: 6;
 text-align: center;
 color: $binaryColor0;}
@@ -484,8 +484,8 @@ content: "";
 position: absolute;
 z-index: -10 ;
 background-color: $binaryColor0;
-height: 0.6em;
-top: 0.8em;
+height: 50%;
+top: 15%;
 left: 0em;
 right: 0em;
 }
@@ -506,7 +506,7 @@ position:relative;
 z-index: 20;
 //font-size
 text-align: center;
-top: -35%;
+top: -23%;
 color: $binaryColor0;
 }
 #aulas_heading_2{
