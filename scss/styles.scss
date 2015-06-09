@@ -472,7 +472,7 @@ background-image: url("http://i.imgur.com/YfxsPWu.jpg");
 #aulas_heading_1{
 @include span(full);
 position: relative;
-margin-top: 10%;
+top: 27%;
 font-size: 4em;
 z-index: 6;
 text-align: center;
@@ -506,7 +506,7 @@ position:relative;
 z-index: 20;
 //font-size
 text-align: center;
-top: -23%;
+top: -1%;
 color: $binaryColor0;
 }
 #aulas_heading_2{
@@ -521,8 +521,9 @@ bottom: 15%;
 display: inline-block;
 @include span(full);
 position: relative;
+z-index: 10;
 left: 30%;
-bottom: 15%;
+bottom: 16.8%;
 margin-left: auto;
 margin-right: auto;
 font-size: 2.4em;
@@ -534,9 +535,10 @@ color:$binaryColor1;
 #aulas_subheading_2:before{
 content: '';
 position: absolute;
-margin-top: -7%;
+bottom: 0%;
 z-index: -1;
-width:50%;
+width:110%;
+margin-left: -38%;
 height: 50%;
 background-color: $binaryColor0;
 }
@@ -564,12 +566,11 @@ background-color: $binaryColor1;
 #aulas_heading_band_1:before{
 content:"";
 position:relative;
+z-index: 10;
 top: -30%;
 background-color: $binaryColor0;
-@include span(full);
+width: 100%;
 height: 50%;
-display: block;
-position: relative;
 }
  
 #aulas_subheading_band{
@@ -621,14 +622,12 @@ color: $binaryColor1;
 #aprende_subheading{
 font-size: 2em;
 text-align: center;
-color: $binaryColor1
- 
+color: $binaryColor1;
+}
  
 /* */
 /* CONTAINERS */
 /* */
-;
-}
 #aprende_text{
 position: relative;
 text-align: center;

@@ -796,7 +796,7 @@ margin-left:0;
   margin-left: 0;
   margin-right: 0;
   position: relative;
-  margin-top: 10%;
+  top: 27%;
   font-size: 4em;
   z-index: 6;
   text-align: center;
@@ -836,7 +836,7 @@ margin-left:0;
   position: relative;
   z-index: 20;
   text-align: center;
-  top: -23%;
+  top: -1%;
   color: white; }
 
 #aulas_heading_2 {
@@ -853,8 +853,9 @@ margin-left:0;
   margin-left: 0;
   margin-right: 0;
   position: relative;
+  z-index: 10;
   left: 30%;
-  bottom: 15%;
+  bottom: 16.8%;
   margin-left: auto;
   margin-right: auto;
   font-size: 2.4em;
@@ -865,9 +866,10 @@ margin-left:0;
 #aulas_subheading_2:before {
   content: '';
   position: absolute;
-  margin-top: -7%;
+  bottom: 0%;
   z-index: -1;
-  width: 50%;
+  width: 110%;
+  margin-left: -38%;
   height: 50%;
   background-color: white; }
 
@@ -896,15 +898,11 @@ background-color: $binaryColor0;
 #aulas_heading_band_1:before {
   content: "";
   position: relative;
+  z-index: 10;
   top: -30%;
   background-color: white;
   width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  height: 50%;
-  display: block;
-  position: relative; }
+  height: 50%; }
 
 #aulas_subheading_band {
   background-color: white;
@@ -964,6 +962,9 @@ height: 5%;
   text-align: center;
   color: black; }
 
+/* */
+/* CONTAINERS */
+/* */
 #aprende_text {
   position: relative;
   text-align: center;
