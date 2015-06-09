@@ -847,11 +847,39 @@ margin-left:0;
   bottom: 15%; }
 
 #aulas_subheading_2 {
-  font-size: 3em;
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  left: 30%;
+  bottom: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.4em;
   /*text-align: center;
   vertical-align: bottom;*/
   color: black; }
 
+#aulas_subheading_2:before {
+  content: '';
+  position: absolute;
+  margin-top: -7%;
+  z-index: -1;
+  width: 50%;
+  height: 50%;
+  background-color: white; }
+
+/*
+#aulas_subheading_2:after{
+position: absolute;
+z-index:3;
+width: 80%;
+height: 30%;
+background-color: $binaryColor0;
+@extend %debug;
+} */
 /* */
 /* DIVIDERS AND SHAPES */
 /* */
