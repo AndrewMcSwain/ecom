@@ -452,14 +452,14 @@ height:611px;
 
 #aulas_container_top{
 @include span(full);
-height:40%;
+height:45%;
 position:relative;
 @extend %bg-image;
 background-image: url("http://i.imgur.com/6Tv6r7F.png");
 }
 
 #aulas_container_bottom{
-height:60%;
+height:55%;
 @include span(full);
 @extend %bg-image;
 background-image: url("http://i.imgur.com/YfxsPWu.jpg");

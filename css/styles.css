@@ -782,12 +782,12 @@ margin-left:0;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: 40%;
+  height: 45%;
   position: relative;
   background-image: url("http://i.imgur.com/6Tv6r7F.png"); }
 
 #aulas_container_bottom {
-  height: 60%;
+  height: 55%;
   width: 100%;
   float: left;
   margin-left: 0;
@@ -849,7 +849,7 @@ margin-left:0;
 #aulas_heading_2 {
   position: relative;
   text-align: center;
-  font-size: 20em;
+  font-size: 30em;
   color: black;
   bottom: 5%; }
 
