@@ -919,7 +919,7 @@ height: 5%;
 }*/
 /******* THIRD SECTION *******/
 #aprende_container {
-  height: auto; }
+  height: 600px; }
 
 #aprende_heading_container {
   width: 100%;
@@ -952,28 +952,38 @@ height: 5%;
   float: left;
   margin-left: 0;
   margin-right: 0;
+  position: relative;
+  bottom: 1%;
+  margin-top: 10%;
+  font-size: 3em;
   text-align: center;
   color: black; }
 
 #aprende_subheading {
+  font-size: 2em;
   text-align: center;
   color: black; }
 
 #aprende_text {
+  position: relative;
   text-align: center;
+  font-size: 2em;
   color: white; }
+
+#aprende_text:before {
+  content: '';
+  position: absolute; }
 
 /* */
 /* DIVIDERS AND SHAPES */
 /* */
-#aprende_band {
+#aprende_divider {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
   height: 20%;
-  z-index: 1;
-  background-color: red; }
+  background-color: black; }
 
 #aprende_text_effect {
   background-color: grey; }

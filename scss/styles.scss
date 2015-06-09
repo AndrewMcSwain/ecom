@@ -587,7 +587,7 @@ height: 5%;
  
 /******* THIRD SECTION *******/
 #aprende_container{
-height:auto;
+height: 600px;
 }
 #aprende_heading_container{
 @include span(full);
@@ -611,10 +611,15 @@ height:auto;
  
 #aprende_heading{
 @include span(full);
+position: relative;
+bottom: 1%;
+margin-top: 10%;
+font-size: 3em;
 text-align: center;
 color: $binaryColor1;
 }
 #aprende_subheading{
+font-size: 2em;
 text-align: center;
 color: $binaryColor1
  
@@ -625,20 +630,25 @@ color: $binaryColor1
 ;
 }
 #aprende_text{
+position: relative;
 text-align: center;
+font-size: 2em;
 color: $binaryColor0;
+}
+#aprende_text:before{
+	content:'';
+	position:absolute;
 }
  
  
 /* */
 /* DIVIDERS AND SHAPES */
 /* */
-#aprende_band{
+#aprende_divider{
 @include span(full);
 height:20%;
-z-index: 1;
-background-color: red;
-}//not showing up at all!!!
+background-color: $binaryColor1;
+}
  
  
 #aprende_text_effect{background-color: grey ;} /*grey opacity*/
