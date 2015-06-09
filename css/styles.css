@@ -366,13 +366,6 @@ th {
   background-color: #ED1C24; }
 
 /*create placeholders for vertical alignment increments*/
-#aulas_subheading_2 {
-  position: relative;
-  top: 60%;
-  -webkit-transform: translateY(-60%);
-  -ms-transform: translateY(-60%);
-  transform: translateY(-60%); }
-
 #main_background_container, #CTA_textbox_abs {
   border: 1px solid red; }
 
@@ -803,7 +796,7 @@ margin-left:0;
   margin-left: 0;
   margin-right: 0;
   position: relative;
-  margin-top: 5%;
+  margin-top: 10%;
   font-size: 4em;
   z-index: 6;
   text-align: center;
@@ -849,14 +842,14 @@ margin-left:0;
 #aulas_heading_2 {
   position: relative;
   text-align: center;
-  font-size: 30em;
+  font-size: 17em;
   color: black;
-  bottom: 5%; }
+  bottom: 15%; }
 
 #aulas_subheading_2 {
   font-size: 3em;
-  text-align: center;
-  vertical-align: bottom;
+  /*text-align: center;
+  vertical-align: bottom;*/
   color: black; }
 
 /* */
