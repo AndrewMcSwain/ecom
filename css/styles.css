@@ -362,6 +362,12 @@ th {
 .highlight0 {
   background-color: white; }
 
+.highlight0a {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  margin-bottom: -50%; }
+
 .highlightOffset {
   background-color: #ED1C24; }
 
@@ -925,14 +931,14 @@ height: 5%;
   margin-left: 0;
   margin-right: 0;
   background-color: #1B414A;
-  height: auto; }
+  height: 19%; }
 
 #aprende_subheading_container {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: auto; }
+  height: 13.2%; }
 
 #aprende_container_text {
   background-color: black;
@@ -940,7 +946,8 @@ height: 5%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: auto; }
+  height: auto;
+  font-size: 4em; }
 
 /* */
 /* TEXT */
@@ -951,14 +958,14 @@ height: 5%;
   margin-left: 0;
   margin-right: 0;
   position: relative;
-  bottom: 1%;
-  margin-top: 10%;
-  font-size: 3em;
+  line-height: 1.65;
+  font-size: 6em;
   text-align: center;
   color: black; }
 
 #aprende_subheading {
-  font-size: 2em;
+  font-size: 3.8em;
+  line-height: 2;
   text-align: center;
   color: black; }
 
@@ -1039,9 +1046,67 @@ transition: scale 1s;}*/
   width: 13.32756%;
   float: left;
   margin-right: 0.00666%;
-  color: black; }
+  margin-left: 13.33422%;
+  color: black;
+  font-size: 3.5em;
+  clear: right; }
+
+#fale {
+  z-index: 10;
+  width: 87%; }
+
+#fale:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background-color: #fff;
+  width: 87%;
+  height: 100%;
+  left: 8%; }
+
+#que {
+  z-index: 10;
+  width: 73%; }
+  #que #que:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 73%;
+    left: 8%; }
+
+#nem {
+  z-index: 10;
+  width: 82%; }
+
+#nem:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 82%;
+  left: 8%; }
+
+#um {
+  z-index: 10;
+  width: 59%; }
+
+#um:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 89%;
+  left: 8%; }
 
 #fale_heading_2 {
+  width: 13.32756%;
+  float: left;
+  margin-right: 0.00666%;
+  margin-left: 15.33435%;
   color: black; }
 
 #fale_subheading_1 {

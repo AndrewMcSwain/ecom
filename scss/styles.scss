@@ -43,6 +43,12 @@ background-color: $binaryColor1;
 .highlight0{
 background-color: $binaryColor0;
 }
+.highlight0a{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	margin-bottom: -50%;
+}
 .highlightOffset{
 background-color: $offsetColor;
 }
@@ -594,17 +600,20 @@ height: 600px;
 @include span(full);
 @extend %color-box-1;
 background-color: $primaryColorDark;
-height: auto;
+height: 19%;
 }
 #aprende_subheading_container{
 @include span(full);
 @extend %color-box-2;
-height:auto;
+height:13.2%;
+
 }
 #aprende_container_text{
 	background-color: $binaryColor1;
 	@include span(full);
-	height: auto;}
+	height: auto;
+	font-size: 4em;
+}
  
 /* */
 /* TEXT */
@@ -613,14 +622,14 @@ height:auto;
 #aprende_heading{
 @include span(full);
 position: relative;
-bottom: 1%;
-margin-top: 10%;
-font-size: 3em;
+line-height: 1.65;
+font-size: 6em;
 text-align: center;
 color: $binaryColor1;
 }
 #aprende_subheading{
-font-size: 2em;
+font-size: 3.8em;
+line-height: 2;
 text-align: center;
 color: $binaryColor1;
 }
@@ -703,10 +712,72 @@ transform: scale(1.1);
 transition: scale 1s;}*/
  
 #fale_heading_1{
-	@include span(2);
+@include span(2);
+@include push(2);
 color: $binaryColor1;
+font-size: 3.5em;
+clear: right;
 }
+
+#fale{
+	z-index: 10;
+	width: 87%;
+}
+#fale:after{
+	content: '';
+	z-index: -1;
+	position: absolute;
+	background-color: #fff;
+	width: 87%;
+	height: 100%;
+	left: 8%;
+	
+}
+#que{
+	z-index: 10;
+	width: 73%;
+	
+#que:after{
+	content: '';
+	z-index: -1;
+	position: absolute;
+	background-color: #fff;
+	height: 100%;
+	width: 73%;
+	left: 8%;
+}
+}
+#nem{
+	z-index: 10;
+	width: 82%;
+}
+#nem:after{
+	content: '';
+	z-index: -1;
+	position: absolute;
+	background-color: #fff;
+	height: 100%;
+	width: 82%;
+	left: 8%;
+	;
+}
+#um{
+	z-index: 10;
+	width: 59%;
+}
+#um:after{
+	content: '';
+	z-index: -1;
+	position: absolute;
+	background-color: #fff;
+	height: 100%;
+	width: 89%;
+	left: 8%;
+}
+
 #fale_heading_2{
+@include span(2);
+@include push(2.3);
 color: $binaryColor1;
 }
 #fale_subheading_1{
