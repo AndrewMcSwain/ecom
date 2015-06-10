@@ -1043,20 +1043,19 @@ color: $binaryColor0;
 transform: scale(1.1);
 transition: scale 1s;}*/
 .fale_heading {
+  position: relative;
+  display: block;
   width: 13.32756%;
   float: left;
   margin-right: 0.00666%;
   margin-left: 13.33422%;
   color: black;
-  font-size: 3.5em;
+  font-size: 3em;
   clear: right;
   z-index: 10; }
 
 #fale, #que, #nem, #um {
   z-index: 9; }
-
-#fale {
-  width: 87%; }
 
 #fale:after {
   content: '';
@@ -1067,9 +1066,6 @@ transition: scale 1s;}*/
   height: 100%;
   left: 8%; }
 
-#que {
-  width: 73%; }
-
 #que:after {
   content: '';
   z-index: -1;
@@ -1079,9 +1075,6 @@ transition: scale 1s;}*/
   width: 73%;
   left: 8%; }
 
-#nem {
-  width: 82%; }
-
 #nem:after {
   content: '';
   z-index: -1;
@@ -1090,9 +1083,6 @@ transition: scale 1s;}*/
   height: 100%;
   width: 82%;
   left: 8%; }
-
-#um {
-  width: 59%; }
 
 #um:after {
   content: '';
