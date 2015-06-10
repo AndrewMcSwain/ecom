@@ -43,11 +43,7 @@ background-color: $binaryColor1;
 .highlight0{
 background-color: $binaryColor0;
 }
-.highlight0a{
-	position: relative;
-	height: 10%;
-	width: 100%;
-}
+
 .highlightOffset{
 background-color: $offsetColor;
 }
@@ -672,6 +668,8 @@ background-color: $binaryColor1;
 @include span(full);
 background-color: $binaryColor1;
 height: auto;
+min-height: 300px;
+position: relative;
 } 
 
 #CTA_middle_primary_container{
@@ -715,11 +713,16 @@ transform: scale(1.1);
 transition: scale 1s;}*/
  
 #fale_container_padding{
-	position: relative;
-	min-height: 300px;
+position: relative;
+height:  20%;
 } 
  
+#fale_text_container{
+position:relative;
+} 
+
 .fale_heading{
+display: block;
 position: absolute;
 @include span(2);
 @include push(2);
@@ -736,7 +739,10 @@ clear: right;
 	z-index: 10;
 }
 
-#fale{;
+$topheight: -18%;
+
+#fale{
+	margin-top: $topheight;
 }
 
 #fale:after{
@@ -750,7 +756,8 @@ clear: right;
 }
 
 #que{
-	;
+	margin-top: $topheight+8.5%;
+	
 }
 
 #que:after{
@@ -763,7 +770,7 @@ clear: right;
 	left: 8%;
 }
 #nem{
-	;
+	margin-top: $topheight+17%;
 }
 #nem:after{
 	content: '';
@@ -776,7 +783,7 @@ clear: right;
 	;
 }
 #um{
-	;
+	margin-top: $topheight+25%;
 }
 #um:after{
 	content: '';
@@ -788,11 +795,19 @@ clear: right;
 	left: 8%;
 }
 
+#fale_heading_2, #fale_subheading_2{
+@include push(7 of 15);
+display: block;
+margin-bottom: 0;
+margin-top: 0;
+}
+
 #fale_heading_2{
+
 @include span(2);
-@include push(2.3);
 color: $binaryColor1;
 }
+
 #fale_subheading_1{
 color: $binaryColor1;
 }
@@ -812,7 +827,10 @@ color: offsetColor1;
 color: $binaryColor1;
 }*/
  
- 
+#fale_textbox_0{
+height: 40%;
+min-width: 600px;
+} 
 #fale_textbox_1{
 @include span(full);
 background-color: $binaryColor0;
