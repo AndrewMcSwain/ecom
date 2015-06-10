@@ -47,7 +47,7 @@ background-color: $binaryColor0;
 	position: relative;
 	height: 10%;
 	width: 100%;
-	margin-bottom: -50%;
+	margin-bottom:1%;
 }
 .highlightOffset{
 background-color: $offsetColor;
@@ -711,16 +711,17 @@ color: $binaryColor0;
 transform: scale(1.1);
 transition: scale 1s;}*/
  
-#fale_heading_1{
+.fale_heading{
 @include span(2);
 @include push(2);
 color: $binaryColor1;
 font-size: 3.5em;
 clear: right;
+z-index: 10;
 }
 
 #fale, #que, #nem, #um{
-	z-index: 10;
+	z-index: 9;
 }
 
 #fale{
