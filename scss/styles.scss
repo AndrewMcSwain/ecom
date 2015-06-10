@@ -47,7 +47,6 @@ background-color: $binaryColor0;
 	position: relative;
 	height: 10%;
 	width: 100%;
-	margin-bottom: -50%;
 }
 .highlightOffset{
 background-color: $offsetColor;
@@ -673,9 +672,13 @@ background-color: $binaryColor1;
 @include span(full);
 background-color: $binaryColor1;
 height: auto;
+} 
+
+#CTA_middle_primary_container{
+@include span(full);
+background-color: $binaryColor1;
+height: auto;
 }
- 
- 
 #CTA_middle_container{
 background-color: $binaryColor0;
 margin: 0 auto;
@@ -711,7 +714,13 @@ color: $binaryColor0;
 transform: scale(1.1);
 transition: scale 1s;}*/
  
-#fale_heading_1{
+#fale_container_padding{
+	position: relative;
+	min-height: 300px;
+} 
+ 
+.fale_heading{
+position: absolute;
 @include span(2);
 @include push(2);
 color: $binaryColor1;
@@ -719,12 +728,15 @@ font-size: 3.5em;
 clear: right;
 }
 
+.fale_subheading{
+	position: absolute;
+}
+
 #fale, #que, #nem, #um{
 	z-index: 10;
 }
 
-#fale{
-	width: 87%;
+#fale{;
 }
 
 #fale:after{
@@ -738,7 +750,7 @@ clear: right;
 }
 
 #que{
-	width: 73%;
+	;
 }
 
 #que:after{
@@ -751,7 +763,7 @@ clear: right;
 	left: 8%;
 }
 #nem{
-	width: 82%;
+	;
 }
 #nem:after{
 	content: '';
@@ -764,7 +776,7 @@ clear: right;
 	;
 }
 #um{
-	width: 59%;
+	;
 }
 #um:after{
 	content: '';

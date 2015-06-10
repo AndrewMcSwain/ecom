@@ -365,8 +365,7 @@ th {
 .highlight0a {
   position: relative;
   height: 10%;
-  width: 100%;
-  margin-bottom: -50%; }
+  width: 100%; }
 
 .highlightOffset {
   background-color: #ED1C24; }
@@ -1009,6 +1008,14 @@ height: 5%;
   background-color: black;
   height: auto; }
 
+#CTA_middle_primary_container {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: black;
+  height: auto; }
+
 #CTA_middle_container {
   background-color: white;
   margin: 0 auto;
@@ -1042,7 +1049,12 @@ height: 5%;
 color: $binaryColor0;
 transform: scale(1.1);
 transition: scale 1s;}*/
-#fale_heading_1 {
+#fale_container_padding {
+  position: relative;
+  min-height: 300px; }
+
+.fale_heading {
+  position: absolute;
   width: 13.32756%;
   float: left;
   margin-right: 0.00666%;
@@ -1051,11 +1063,11 @@ transition: scale 1s;}*/
   font-size: 3.5em;
   clear: right; }
 
+.fale_subheading {
+  position: absolute; }
+
 #fale, #que, #nem, #um {
   z-index: 10; }
-
-#fale {
-  width: 87%; }
 
 #fale:after {
   content: '';
@@ -1066,9 +1078,6 @@ transition: scale 1s;}*/
   height: 100%;
   left: 8%; }
 
-#que {
-  width: 73%; }
-
 #que:after {
   content: '';
   z-index: -1;
@@ -1078,9 +1087,6 @@ transition: scale 1s;}*/
   width: 73%;
   left: 8%; }
 
-#nem {
-  width: 82%; }
-
 #nem:after {
   content: '';
   z-index: -1;
@@ -1089,9 +1095,6 @@ transition: scale 1s;}*/
   height: 100%;
   width: 82%;
   left: 8%; }
-
-#um {
-  width: 59%; }
 
 #um:after {
   content: '';
