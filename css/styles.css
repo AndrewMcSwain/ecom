@@ -1051,8 +1051,10 @@ transition: scale 1s;}*/
   font-size: 3.5em;
   clear: right; }
 
+#fale, #que, #nem, #um {
+  z-index: 10; }
+
 #fale {
-  z-index: 10;
   width: 87%; }
 
 #fale:after {
@@ -1065,19 +1067,18 @@ transition: scale 1s;}*/
   left: 8%; }
 
 #que {
-  z-index: 10;
   width: 73%; }
-  #que #que:after {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    background-color: #fff;
-    height: 100%;
-    width: 73%;
-    left: 8%; }
+
+#que:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 73%;
+  left: 8%; }
 
 #nem {
-  z-index: 10;
   width: 82%; }
 
 #nem:after {
@@ -1090,7 +1091,6 @@ transition: scale 1s;}*/
   left: 8%; }
 
 #um {
-  z-index: 10;
   width: 59%; }
 
 #um:after {

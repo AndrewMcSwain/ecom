@@ -719,10 +719,14 @@ font-size: 3.5em;
 clear: right;
 }
 
-#fale{
+#fale, #que, #nem, #um{
 	z-index: 10;
+}
+
+#fale{
 	width: 87%;
 }
+
 #fale:after{
 	content: '';
 	z-index: -1;
@@ -731,12 +735,12 @@ clear: right;
 	width: 87%;
 	height: 100%;
 	left: 8%;
-	
 }
+
 #que{
-	z-index: 10;
 	width: 73%;
-	
+}
+
 #que:after{
 	content: '';
 	z-index: -1;
@@ -746,9 +750,7 @@ clear: right;
 	width: 73%;
 	left: 8%;
 }
-}
 #nem{
-	z-index: 10;
 	width: 82%;
 }
 #nem:after{
@@ -762,7 +764,6 @@ clear: right;
 	;
 }
 #um{
-	z-index: 10;
 	width: 59%;
 }
 #um:after{
