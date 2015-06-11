@@ -1202,18 +1202,32 @@ color: $binaryColor1;
   margin-right: 0;
   height: 900px; }
 
-#heading_container {
+#conquistar_heading_container {
   background-color: black; }
 
-#subheading_container {
-  background-color: white; }
-
 #p_container {
+  height: 60%;
   background-image: url("http://i.imgur.com/mWo7x03.pnge.jpg");
   /*not showing image*/ }
 
 #conquistar_heading {
   color: white; }
+
+#conquistar_subheading {
+  position: relative;
+  z-index: 1;
+  font-size: 3em;
+  color: black;
+  padding-bottom: 2%; }
+
+#conquistar_subheading:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: white;
+  width: 40%;
+  height: 1.2em;
+  top: 2%; }
 
 #final_form_container {
   background-color: white; }
@@ -1221,6 +1235,11 @@ color: $binaryColor1;
 /* */
 /* TEXT */
 /* */
+#conquistar_text {
+  display: inline;
+  font-size: 3.6em;
+  text-align: center; }
+
 #final_heading {
   color: white; }
 

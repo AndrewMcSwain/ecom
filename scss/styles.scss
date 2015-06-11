@@ -893,21 +893,35 @@ color: $binaryColor0;
 @include span(full);
 height: 900px;
 }
-#heading_container{
-background-color:$binaryColor1;
+#conquistar_heading_container{
+background-color: $binaryColor1;
 }
-#subheading_container{
-background-color: $binaryColor0;
-}
+
 #p_container{
 @extend %bg-image;
+height: 60%;
 background-image: url("http://i.imgur.com/mWo7x03.pnge.jpg");/*not showing image*/
 }
  
 #conquistar_heading{
 color: $binaryColor0;
 }
- 
+#conquistar_subheading {
+position: relative;
+z-index: 1;
+font-size: 3em;
+color: $binaryColor1;
+padding-bottom: 2%;
+}
+#conquistar_subheading:before{
+content: '';
+position: absolute;
+z-index: -1;
+background-color: $binaryColor0;
+width: 40%;
+height: 1.2em;
+top: 2%;
+}
 #final_container{
 ;
 }
@@ -919,6 +933,12 @@ background-color: white;
 /* */
 /* TEXT */
 /* */
+
+#conquistar_text{
+	display: inline;
+	font-size: 3.6em;
+	text-align: center;
+}
  
 #final_heading{
 ;
