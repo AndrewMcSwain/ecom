@@ -787,17 +787,53 @@ z-index: 10;
 	min-width: 2em;
 }
 
-#fale_heading_2{
+
+#fale_textboxcontainer, #fale_textbox_1, #fale_textbox_2, #fale_textbox_3,{
+position: relative;
+@include span(full);
+height: auto;
+}
+#fale_textboxcontainer{
+background-color: $binaryColor1;	
+z-index: 0;
+}
+#fale_textbox_1, #fale_textbox_2, #fale_textbox_3,{
+top: 0;
+z-index: 2;
+}
+#fale_textbox_1{
+height: 100px;
+background-color: $binaryColor0;
+}
+#fale_textbox_2{	
+height: 100px;
+background-color: $offsetColor1Dark;
+}
+#fale_textbox_3{
+height: 100px;
+background-color: $greyColor1;
+}
+ 
+ 
+#fale_heading_2, #fale_subheading_1, #fale_subheading_2{
+position: absolute;
+z-index: 4;
 @include span(2);
 @include push(2.3);
 color: $binaryColor1;
 }
+#fale_heading_2{
+	top: 10;
+}
 #fale_subheading_1{
-color: $binaryColor1;
+	font-size: 4em;
+	top: 10;
 }
 #fale_subheading_2{
-color: $binaryColor1;
+	top: 10;
 }
+ 
+ 
  
  
 /* */
@@ -811,19 +847,6 @@ color: offsetColor1;
 color: $binaryColor1;
 }*/
  
- 
-#fale_textbox_1{
-@include span(full);
-background-color: $binaryColor0;
-}
-#fale_textbox_2{
-@include span(full);
-background-color: $offsetColor1Dark;
-}
-#fale_textbox_3{
-@include span(full);
-background-color: $greyColor1;
-}
  
 /******* FIFTH SECTION *******/
  

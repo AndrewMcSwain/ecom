@@ -1100,18 +1100,52 @@ transition: scale 1s;}*/
   left: 13.1%;
   min-width: 2em; }
 
-#fale_heading_2 {
+#fale_textboxcontainer, #fale_textbox_1, #fale_textbox_2, #fale_textbox_3 {
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  height: auto; }
+
+#fale_textboxcontainer {
+  background-color: black;
+  z-index: 0; }
+
+#fale_textbox_1, #fale_textbox_2, #fale_textbox_3 {
+  top: 0;
+  z-index: 2; }
+
+#fale_textbox_1 {
+  height: 100px;
+  background-color: white; }
+
+#fale_textbox_2 {
+  height: 100px;
+  background-color: #7C1A1A; }
+
+#fale_textbox_3 {
+  height: 100px;
+  background-color: #3F3C3C; }
+
+#fale_heading_2, #fale_subheading_1, #fale_subheading_2 {
+  position: absolute;
+  z-index: 4;
   width: 13.32756%;
   float: left;
   margin-right: 0.00666%;
   margin-left: 15.33435%;
   color: black; }
 
+#fale_heading_2 {
+  top: 10; }
+
 #fale_subheading_1 {
-  color: black; }
+  font-size: 4em;
+  top: 10; }
 
 #fale_subheading_2 {
-  color: black; }
+  top: 10; }
 
 /* */
 /* BUTTONS */
@@ -1122,27 +1156,6 @@ transition: scale 1s;}*/
 /*#CTA_middle_button_effect{
 color: $binaryColor1;
 }*/
-#fale_textbox_1 {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: white; }
-
-#fale_textbox_2 {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: #7C1A1A; }
-
-#fale_textbox_3 {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: #3F3C3C; }
-
 /******* FIFTH SECTION *******/
 /* */
 /* CONTAINERS */
