@@ -847,7 +847,11 @@ color: offsetColor1;
 color: $binaryColor1;
 }*/
  
- 
+%fale-melhor-alignment{
+@include span(6);
+@include push(2);
+}
+
 /******* FIFTH SECTION *******/
  
 /* */
@@ -863,10 +867,17 @@ background-color: $binaryColor1;
 /* */
 /* TEXT */
 /* */
-#melhor_heading{
+#melhor_heading_1{
+margin-top: 1%;
+font-size: 3em;
+@extend %fale-melhor-alignment;
+clear: right;
 background-color: $binaryColor1;
 }
 #melhor_subheading{
+@include span(full first);
+@include push(3.5);
+font-size: 7em;
 color: $binaryColor0;
 }
  

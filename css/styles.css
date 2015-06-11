@@ -1156,6 +1156,12 @@ transition: scale 1s;}*/
 /*#CTA_middle_button_effect{
 color: $binaryColor1;
 }*/
+#melhor_heading_1 {
+  width: 39.996%;
+  float: left;
+  margin-right: 0.00666%;
+  margin-left: 13.33422%; }
+
 /******* FIFTH SECTION *******/
 /* */
 /* CONTAINERS */
@@ -1171,10 +1177,18 @@ color: $binaryColor1;
 /* */
 /* TEXT */
 /* */
-#melhor_heading {
+#melhor_heading_1 {
+  margin-top: 1%;
+  font-size: 3em;
+  clear: right;
   background-color: black; }
 
 #melhor_subheading {
+  width: 100%;
+  float: left;
+  margin-right: 0.00666%;
+  margin-left: 23.33489%;
+  font-size: 7em;
   color: white; }
 
 /******* SIXTH SECTION *******/
