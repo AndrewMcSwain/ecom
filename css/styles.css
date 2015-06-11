@@ -364,9 +364,9 @@ th {
 
 .highlight0a {
   position: relative;
-  height: 10%;
+  height: 55.7px;
   width: 100%;
-  margin-bottom: 2%; }
+  margin-bottom: 1%; }
 
 .highlightOffset {
   background-color: #ED1C24; }
@@ -1057,7 +1057,7 @@ transition: scale 1s;}*/
 #fale, #que, #nem, #um {
   z-index: 9; }
 
-#fale {
+#faleh1 {
   left: 0.6%; }
 
 #fale:after {
@@ -1065,10 +1065,10 @@ transition: scale 1s;}*/
   z-index: -1;
   position: absolute;
   background-color: #fff;
-  width: 12%;
+  width: 9%;
   height: 100%;
   left: 13.5%;
-  min-width: 5em; }
+  min-width: 4em; }
 
 #que:after {
   content: '';
@@ -1078,7 +1078,7 @@ transition: scale 1s;}*/
   height: 100%;
   width: 9.1%;
   left: 13%;
-  min-width: 3em; }
+  min-width: 6em; }
 
 #nem:after {
   content: '';
