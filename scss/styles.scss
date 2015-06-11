@@ -47,7 +47,7 @@ background-color: $binaryColor0;
 	position: relative;
 	height: 10%;
 	width: 100%;
-	margin-bottom:1%;
+	margin-bottom:2%;
 }
 .highlightOffset{
 background-color: $offsetColor;
@@ -727,6 +727,7 @@ z-index: 10;
 }
 
 #fale{
+	left:0.6%;
 	;
 }
 
@@ -735,9 +736,10 @@ z-index: 10;
 	z-index: -1;
 	position: absolute;
 	background-color: #fff;
-	width: 87%;
+	width: 12%;
 	height: 100%;
-	left: 8%;
+	left: 13.5%;
+	min-width: 5em;
 }
 
 #que{
@@ -750,8 +752,9 @@ z-index: 10;
 	position: absolute;
 	background-color: #fff;
 	height: 100%;
-	width: 73%;
-	left: 8%;
+	width: 9.1%;
+	left: 13%;
+	min-width: 3em;
 }
 #nem{
 	;
@@ -762,8 +765,9 @@ z-index: 10;
 	position: absolute;
 	background-color: #fff;
 	height: 100%;
-	width: 82%;
-	left: 8%;
+	width: 	10.5%;
+	left: 13.2%;
+	min-width: 4em;
 	;
 }
 #um{
@@ -775,8 +779,9 @@ z-index: 10;
 	position: absolute;
 	background-color: #fff;
 	height: 100%;
-	width: 89%;
-	left: 8%;
+	width: 7.3%;
+	left: 13.1%;
+	min-width: 2em;
 }
 
 #fale_heading_2{
