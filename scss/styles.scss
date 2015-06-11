@@ -891,7 +891,7 @@ color: $binaryColor0;
  
 #conquistar_container{
 @include span(full);
-height: 900px;
+height: auto;
 }
 #conquistar_heading_container{
 background-color: $binaryColor1;
@@ -923,6 +923,8 @@ height: 1.2em;
 top: 2%;
 }
 #final_container{
+@include span(full);
+height: auto;
 ;
 }
 #final_form_container{
@@ -940,9 +942,15 @@ background-color: white;
 	text-align: center;
 }
  
+#final_heading_band{
+background-color: $binaryColor1;
+height: auto;
+ 
 #final_heading{
-;
+font-size: 2.5em;
 color: $binaryColor0;
+padding-top: 2%;
+padding-bottom: 5%;
 }
  
 #final_form_text{
@@ -951,7 +959,7 @@ color: black;
 #final_button_text{
 color: $binaryColor0;
 }
- 
+
  
 /* */
 /* BUTTONS */
@@ -967,10 +975,7 @@ background-color: $offsetColor2;
 /* DIVIDERS AND SHAPES */
 /* */
  
-#final_heading_band{
-background-color: black;
-height: 100px;
-color:white;
+
 /*set % height*/
 /*put this at the top of the container*/
 }

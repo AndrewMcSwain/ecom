@@ -1200,7 +1200,7 @@ color: $binaryColor1;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: 900px; }
+  height: auto; }
 
 #conquistar_heading_container {
   background-color: black; }
@@ -1229,6 +1229,13 @@ color: $binaryColor1;
   height: 1.2em;
   top: 2%; }
 
+#final_container {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  height: auto; }
+
 #final_form_container {
   background-color: white; }
 
@@ -1240,30 +1247,28 @@ color: $binaryColor1;
   font-size: 3.6em;
   text-align: center; }
 
-#final_heading {
-  color: white; }
-
-#final_form_text {
-  color: black; }
-
-#final_button_text {
-  color: white; }
-
-/* */
-/* BUTTONS */
-/* */
-#final_form_button {
-  background-color: #D81E9D; }
-
-/* */
-/* DIVIDERS AND SHAPES */
-/* */
 #final_heading_band {
   background-color: black;
-  height: 100px;
-  color: white;
+  height: auto;
+  /* */
+  /* BUTTONS */
+  /* */
+  /* */
+  /* DIVIDERS AND SHAPES */
+  /* */
   /*set % height*/
   /*put this at the top of the container*/ }
+  #final_heading_band #final_heading {
+    font-size: 2.5em;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 5%; }
+  #final_heading_band #final_form_text {
+    color: black; }
+  #final_heading_band #final_button_text {
+    color: white; }
+  #final_heading_band #final_form_button {
+    background-color: #D81E9D; }
 
 #final_emaiL_input {
   color: white; }
