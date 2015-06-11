@@ -741,9 +741,11 @@ clear: right;
 
 $topheight: -18%;
 
-#fale{
+#falediv{
 	margin-top: $topheight;
 }
+
+#fale{;}
 
 #fale:after{
 	content: '';
@@ -755,10 +757,11 @@ $topheight: -18%;
 	left: 8%;
 }
 
-#que{
+#quediv{
 	margin-top: $topheight+8.5%;
 	
 }
+#que{;}
 
 #que:after{
 	content: '';
@@ -769,9 +772,10 @@ $topheight: -18%;
 	width: 73%;
 	left: 8%;
 }
-#nem{
+#nemdiv{
 	margin-top: $topheight+17%;
 }
+#nem{;}
 #nem:after{
 	content: '';
 	z-index: -1;
@@ -782,9 +786,10 @@ $topheight: -18%;
 	left: 8%;
 	;
 }
-#um{
+#umdiv{
 	margin-top: $topheight+25%;
 }
+#um{;}
 #um:after{
 	content: '';
 	z-index: -1;
@@ -803,7 +808,6 @@ margin-top: 0;
 }
 
 #fale_heading_2{
-
 @include span(2);
 color: $binaryColor1;
 }

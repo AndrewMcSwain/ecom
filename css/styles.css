@@ -1070,7 +1070,7 @@ transition: scale 1s;}*/
 #fale, #que, #nem, #um {
   z-index: 10; }
 
-#fale {
+#falediv {
   margin-top: -18%; }
 
 #fale:after {
@@ -1082,7 +1082,7 @@ transition: scale 1s;}*/
   height: 100%;
   left: 8%; }
 
-#que {
+#quediv {
   margin-top: -9.5%; }
 
 #que:after {
@@ -1094,7 +1094,7 @@ transition: scale 1s;}*/
   width: 73%;
   left: 8%; }
 
-#nem {
+#nemdiv {
   margin-top: -1%; }
 
 #nem:after {
@@ -1106,7 +1106,7 @@ transition: scale 1s;}*/
   width: 82%;
   left: 8%; }
 
-#um {
+#umdiv {
   margin-top: 7%; }
 
 #um:after {
