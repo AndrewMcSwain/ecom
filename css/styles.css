@@ -708,10 +708,10 @@ margin-left:0;
 #CTA_textbox_abs {
   position: absolute;
   z-index: 3;
-  top: -23%;
-  left: -22%;
-  height: 110%;
-  width: 130%;
+  top: -20%;
+  left: -41%;
+  height: 140%;
+  width: 233%;
   min-height: 28%;
   background-color: white; }
 
@@ -1057,9 +1057,6 @@ transition: scale 1s;}*/
 #fale, #que, #nem, #um {
   z-index: 9; }
 
-#faleh1 {
-  left: 0.6%; }
-
 #fale:after {
   content: '';
   z-index: -1;
@@ -1067,7 +1064,7 @@ transition: scale 1s;}*/
   background-color: #fff;
   width: 9%;
   height: 100%;
-  left: 13.5%;
+  left: 13.334%;
   min-width: 4em; }
 
 #que:after {
@@ -1077,7 +1074,7 @@ transition: scale 1s;}*/
   background-color: #fff;
   height: 100%;
   width: 9.1%;
-  left: 13%;
+  left: 13.334%;
   min-width: 6em; }
 
 #nem:after {
@@ -1087,7 +1084,7 @@ transition: scale 1s;}*/
   background-color: #fff;
   height: 100%;
   width: 10.5%;
-  left: 13.2%;
+  left: 13.334%;
   min-width: 4em; }
 
 #um:after {
@@ -1097,10 +1094,10 @@ transition: scale 1s;}*/
   background-color: #fff;
   height: 100%;
   width: 7.3%;
-  left: 13.1%;
+  left: 13.334%;
   min-width: 2em; }
 
-#fale_textboxcontainer, #fale_textbox_1, #fale_textbox_2, #fale_textbox_3 {
+#fale_textbox_container, #fale_textbox_1, #fale_textbox_2, #fale_textbox_3 {
   position: relative;
   width: 100%;
   float: left;
@@ -1108,7 +1105,7 @@ transition: scale 1s;}*/
   margin-right: 0;
   height: auto; }
 
-#fale_textboxcontainer {
+#fale_textbox_container {
   background-color: black;
   z-index: 0; }
 
@@ -1121,11 +1118,11 @@ transition: scale 1s;}*/
   background-color: white; }
 
 #fale_textbox_2 {
-  height: 100px;
+  height: 60px;
   background-color: #7C1A1A; }
 
 #fale_textbox_3 {
-  height: 100px;
+  height: 80px;
   background-color: #3F3C3C; }
 
 #fale_heading_2, #fale_subheading_1, #fale_subheading_2 {
@@ -1171,8 +1168,10 @@ color: $binaryColor1;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: 535px;
-  background-color: black; }
+  height: auto;
+  background-color: black;
+  padding-bottom: 4%;
+  padding-top: 2%; }
 
 /* */
 /* TEXT */
@@ -1207,18 +1206,20 @@ color: $binaryColor1;
 
 #p_container {
   height: 60%;
-  background-image: url("http://i.imgur.com/mWo7x03.pnge.jpg");
+  background-image: url("../../../images/Grbqfj7.jpg");
   /*not showing image*/ }
 
 #conquistar_heading {
-  color: white; }
+  color: white;
+  margin-left: 13.33422%; }
 
 #conquistar_subheading {
   position: relative;
   z-index: 1;
   font-size: 3em;
   color: black;
-  padding-bottom: 2%; }
+  padding-bottom: 1%;
+  margin-left: 13.33422%; }
 
 #conquistar_subheading:before {
   content: '';
@@ -1234,42 +1235,59 @@ color: $binaryColor1;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: auto; }
+  height: auto;
+  background-color: white; }
 
 #final_form_container {
-  background-color: white; }
+  position: relative;
+  background-color: white;
+  width: 39.996%;
+  float: left;
+  margin-right: 0.00666%;
+  margin-left: 26.66844%;
+  padding: 1.5% 2%;
+  margin-top: -2%; }
 
 /* */
 /* TEXT */
 /* */
 #conquistar_text {
-  display: inline;
+  display: inline-block;
   font-size: 3.6em;
-  text-align: center; }
+  margin-left: 14.66764%;
+  padding-top: 10%; }
 
 #final_heading_band {
   background-color: black;
-  height: auto;
-  /* */
-  /* BUTTONS */
-  /* */
-  /* */
-  /* DIVIDERS AND SHAPES */
-  /* */
-  /*set % height*/
-  /*put this at the top of the container*/ }
-  #final_heading_band #final_heading {
-    font-size: 2.5em;
-    color: white;
-    padding-top: 2%;
-    padding-bottom: 5%; }
-  #final_heading_band #final_form_text {
-    color: black; }
-  #final_heading_band #final_button_text {
-    color: white; }
-  #final_heading_band #final_form_button {
-    background-color: #D81E9D; }
+  height: auto; }
 
+#final_heading {
+  margin-left: 23.33489%;
+  font-size: 2.5em;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 5%; }
+
+#final_form_text {
+  color: black;
+  text-align: center;
+  font-size: 1.5em; }
+
+#final_button_text {
+  color: white; }
+
+/* */
+/* BUTTONS */
+/* */
+#final_form_button {
+  background-color: #D81E9D;
+  float: right; }
+
+/* */
+/* DIVIDERS AND SHAPES */
+/* */
+/*set % height*/
+/*put this at the top of the container*/
 #final_emaiL_input {
   color: white; }
 

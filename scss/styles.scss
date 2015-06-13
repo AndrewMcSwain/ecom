@@ -55,6 +55,7 @@ background-color: $offsetColor;
 }
  
 
+
 /*create placeholders for vertical alignment increments*/
  
  
@@ -332,14 +333,14 @@ width: 79%;
 }
 
 #info_text_startday:after{
-	content: '';
-	z-index: -2;
-	position: absolute;
-	background-color:black;
-	height: 200%;
-	width: 70%;
-	left: 16%;
-	top: 60%;
+content: '';
+z-index: -2;
+position: absolute;
+background-color:black;
+height: 200%;
+width: 70%;
+left: 16%;
+top: 60%;
 }
 
 #info_box_1{
@@ -355,15 +356,11 @@ border: 5px solid rgb(0, 255, 0);
 border: 5px solid rgba(255, 255, 255, 1);
 border-bottom: none;
 }
-
 #main_sidebar_box{
 position: absolute;
 height:80%;
 bottom:0%;
 }
-
-
-
 #main_divider{
 @include span(full);
 background-color: #181717;
@@ -382,10 +379,10 @@ min-height: 17%;
 @extend %debug;
 position: absolute;
 z-index: 3;
-top: -23%;
-left: -22%;
-height:110%;
-width:130%;
+top: -20%;
+left: -41%;
+height:140%;
+width:233%;
 min-height: 28%;
 background-color: white;
 }
@@ -730,9 +727,6 @@ z-index: 10;
 #fale{
 	;
 }
-#faleh1{
-	left:0.6%;
-}
 
 #fale:after{
 	content: '';
@@ -741,7 +735,7 @@ z-index: 10;
 	background-color: #fff;
 	width: 9%;
 	height: 100%;
-	left: 13.5%;
+	left: 13.334%;
 	min-width: 4em;
 }
 
@@ -756,7 +750,7 @@ z-index: 10;
 	background-color: #fff;
 	height: 100%;
 	width: 9.1%;
-	left: 13%;
+	left: 13.334%;
 	min-width: 6em;
 }
 #nem{
@@ -769,7 +763,7 @@ z-index: 10;
 	background-color: #fff;
 	height: 100%;
 	width: 	10.5%;
-	left: 13.2%;
+	left: 13.334%;
 	min-width: 4em;
 	
 }
@@ -783,17 +777,17 @@ z-index: 10;
 	background-color: #fff;
 	height: 100%;
 	width: 7.3%;
-	left: 13.1%;
+	left: 13.334%;
 	min-width: 2em;
 }
 
 
-#fale_textboxcontainer, #fale_textbox_1, #fale_textbox_2, #fale_textbox_3,{
+#fale_textbox_container, #fale_textbox_1, #fale_textbox_2, #fale_textbox_3,{
 position: relative;
 @include span(full);
 height: auto;
 }
-#fale_textboxcontainer{
+#fale_textbox_container{
 background-color: $binaryColor1;	
 z-index: 0;
 }
@@ -806,11 +800,11 @@ height: 100px;
 background-color: $binaryColor0;
 }
 #fale_textbox_2{	
-height: 100px;
+height: 60px;
 background-color: $offsetColor1Dark;
 }
 #fale_textbox_3{
-height: 100px;
+height: 80px;
 background-color: $greyColor1;
 }
  
@@ -860,8 +854,10 @@ color: $binaryColor1;
  
 #melhor_container{
 @include span(full);
-height: 535px;
+height: auto;
 background-color: $binaryColor1;
+padding-bottom: 4%;
+padding-top: 2%;
 }
  
 /* */
@@ -900,18 +896,20 @@ background-color: $binaryColor1;
 #p_container{
 @extend %bg-image;
 height: 60%;
-background-image: url("http://i.imgur.com/mWo7x03.pnge.jpg");/*not showing image*/
+background-image: url('../../../images/Grbqfj7.jpg');/*not showing image*/
 }
- 
+
 #conquistar_heading{
 color: $binaryColor0;
+@include push(2)
 }
 #conquistar_subheading {
 position: relative;
 z-index: 1;
 font-size: 3em;
 color: $binaryColor1;
-padding-bottom: 2%;
+padding-bottom: 1%;
+@include push(2)
 }
 #conquistar_subheading:before{
 content: '';
@@ -925,10 +923,16 @@ top: 2%;
 #final_container{
 @include span(full);
 height: auto;
-;
+background-color: $binaryColor0;
 }
 #final_form_container{
+position: relative;
 background-color: white;
+@include span(6 of 15);
+@include push(4);
+padding: 1.5% 2%;
+margin-top: -2%;
+
 }
  
  
@@ -937,29 +941,34 @@ background-color: white;
 /* */
 
 #conquistar_text{
-	display: inline;
+	display: inline-block;
 	font-size: 3.6em;
-	text-align: center;
+	@include push(2.2);
+	padding-top: 10%;
 }
  
 #final_heading_band{
 background-color: $binaryColor1;
 height: auto;
+}
  
 #final_heading{
+@include push(3.5);
 font-size: 2.5em;
 color: $binaryColor0;
 padding-top: 2%;
 padding-bottom: 5%;
-}
- 
+} 
+
 #final_form_text{
-color: black;
+color: $binaryColor1;
+text-align: center;
+font-size:	1.5em;
 }
+
 #final_button_text{
 color: $binaryColor0;
 }
-
  
 /* */
 /* BUTTONS */
@@ -967,6 +976,7 @@ color: $binaryColor0;
  
 #final_form_button{
 background-color: $offsetColor2;
+float: right;
 }
 #social_media_buttons{;}
  
@@ -978,7 +988,7 @@ background-color: $offsetColor2;
 
 /*set % height*/
 /*put this at the top of the container*/
-}
+
 #final_emaiL_input{
 color: $binaryColor0;
 }

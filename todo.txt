@@ -1,8 +1,13 @@
-match proportions to wix mockup
-cancel wix
+Email Form
+Add fixed Nav bar
 stretch text and/or change font to condensed
+Font sizes NO JS and JS 
+match proportions of everything to wix mockup
+  a.take measurements
+create button
 add animations
 google seo structural changes
 facebook open graph optimization
 blog page
+condense css
 
