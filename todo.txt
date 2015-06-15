@@ -1,7 +1,8 @@
 Email Form
-Add fixed Nav bar
+Add pos: fixed Nav bar
 stretch text and/or change font to condensed
 Font sizes NO JS and JS 
+   No JS fallback font sizes with 2 breakpoints
 match proportions of everything to wix mockup
   a.take measurements
 create button
