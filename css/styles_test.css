@@ -6,19 +6,23 @@
  */
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
 @import url(//fonts.googleapis.com/css?family=Roboto+Condensed);
+/* line 9, ../scss/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove default margin.
  */
+/* line 19, ../scss/_normalize.scss */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -28,6 +32,7 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
+/* line 33, ../scss/_normalize.scss */
 article,
 aside,
 details,
@@ -41,12 +46,14 @@ menu,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
+/* line 54, ../scss/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -54,142 +61,181 @@ video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
+/* line 67, ../scss/_normalize.scss */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
+/* line 77, ../scss/_normalize.scss */
 [hidden],
 template {
-  display: none; }
+  display: none;
+}
 
 /* Links
    ========================================================================== */
 /**
  * Remove the gray background color from active links in IE 10.
  */
+/* line 89, ../scss/_normalize.scss */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+/* line 97, ../scss/_normalize.scss */
 a:active,
 a:hover {
-  outline: 0; }
+  outline: 0;
+}
 
 /* Text-level semantics
    ========================================================================== */
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
+/* line 109, ../scss/_normalize.scss */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
+/* line 117, ../scss/_normalize.scss */
 b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /**
  * Address styling not present in Safari and Chrome.
  */
+/* line 126, ../scss/_normalize.scss */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
+/* line 135, ../scss/_normalize.scss */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /**
  * Address styling not present in IE 8/9.
  */
+/* line 144, ../scss/_normalize.scss */
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
+/* line 153, ../scss/_normalize.scss */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+/* line 161, ../scss/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
+/* line 169, ../scss/_normalize.scss */
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
+/* line 173, ../scss/_normalize.scss */
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* Embedded content
    ========================================================================== */
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
+/* line 184, ../scss/_normalize.scss */
 img {
-  border: 0; }
+  border: 0;
+}
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
+/* line 192, ../scss/_normalize.scss */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* Grouping content
    ========================================================================== */
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
+/* line 203, ../scss/_normalize.scss */
 figure {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /**
  * Address differences between Firefox and other browsers.
  */
+/* line 211, ../scss/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Contain overflow in all browsers.
  */
+/* line 221, ../scss/_normalize.scss */
 pre {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
+/* line 229, ../scss/_normalize.scss */
 code,
 kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 /* Forms
    ========================================================================== */
@@ -203,6 +249,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
+/* line 252, ../scss/_normalize.scss */
 button,
 input,
 optgroup,
@@ -213,13 +260,16 @@ textarea {
   font: inherit;
   /* 2 */
   margin: 0;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
+/* line 266, ../scss/_normalize.scss */
 button {
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -227,9 +277,11 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
+/* line 277, ../scss/_normalize.scss */
 button,
 select {
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -238,6 +290,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
+/* line 290, ../scss/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -245,29 +298,36 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Re-set default cursor for disabled elements.
  */
+/* line 302, ../scss/_normalize.scss */
 button[disabled],
 html input[disabled] {
-  cursor: default; }
+  cursor: default;
+}
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
+/* line 311, ../scss/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+/* line 322, ../scss/_normalize.scss */
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 /**
  * It's recommended that you don't attempt to style these elements.
@@ -276,114 +336,147 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
+/* line 334, ../scss/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
+/* line 346, ../scss/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+  height: auto;
+}
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
+/* line 357, ../scss/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
+/* line 370, ../scss/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /**
  * Define consistent border, margin, and padding.
  */
+/* line 379, ../scss/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
+/* line 390, ../scss/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
+/* line 399, ../scss/_normalize.scss */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
+/* line 408, ../scss/_normalize.scss */
 optgroup {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* Tables
    ========================================================================== */
 /**
  * Remove most spacing between table cells.
  */
+/* line 419, ../scss/_normalize.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
+/* line 424, ../scss/_normalize.scss */
 td,
 th {
-  padding: 0; }
+  padding: 0;
+}
 
+/* line 34, ../scss/styles_test.scss */
 .highlight1 {
-  background-color: black; }
+  background-color: black;
+}
 
+/* line 37, ../scss/styles_test.scss */
 .highlight0 {
-  background-color: white; }
+  background-color: white;
+}
 
+/* line 40, ../scss/styles_test.scss */
 .highlightOffset {
-  background-color: #ED1C24; }
+  background-color: #ED1C24;
+}
 
 /*create placeholders for vertical alignment increments*/
+/* line 48, ../scss/styles_test.scss */
 #aulas_subheading_2 {
   position: relative;
   top: 60%;
   -webkit-transform: translateY(-60%);
   -ms-transform: translateY(-60%);
-  transform: translateY(-60%); }
+  transform: translateY(-60%);
+}
 
+/* line 72, ../scss/styles_test.scss */
 #CTA_textbox_abs {
-  border: 1px solid red; }
+  border: 1px solid red;
+}
 
+/* line 75, ../scss/styles_test.scss */
 #main_background_container, #aulas_container_top, #aulas_container_bottom, #p_container {
   max-width: 100%;
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
+/* line 82, ../scss/styles_test.scss */
 #aprende_heading_container {
   background: #1b414a;
   /* Old browsers */
@@ -400,8 +493,10 @@ th {
   background: linear-gradient(to bottom, #1b414a 51%, #122c32 51%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b414a', endColorstr='#122c32',GradientType=0 );
-  /* IE6-9 */ }
+  /* IE6-9 */
+}
 
+/* line 93, ../scss/styles_test.scss */
 #aprende_subheading_container {
   background: #5b9aa8;
   /* Old browsers */
@@ -418,11 +513,15 @@ th {
   background: linear-gradient(to bottom, #5b9aa8 51%, #358394 51%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b9aa8', endColorstr='#358394',GradientType=0 );
-  /* IE6-9 */ }
+  /* IE6-9 */
+}
 
+/* line 106, ../scss/styles_test.scss */
 html {
-  font-family: 'Open Sans'; }
+  font-family: 'Open Sans';
+}
 
+/* line 111, ../scss/styles_test.scss */
 #grid {
   max-width: 100%;
   margin-left: auto;
@@ -432,48 +531,62 @@ html {
   background-origin: content-box;
   background-clip: content-box;
   background-position: left top;
-  gutter-width: 2%; }
-  #grid:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  head {
-    display: block;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: 999;
-    color: #333;
-    background: rgba(255, 255, 255, 0.25); }
-  head:before {
-    content: "|||";
-    display: block;
-    padding: 5px 10px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: bold; }
-  head:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: red; }
-  head:hover ~ #grid, head:hover ~ body #grid {
-    position: relative; }
-    head:hover ~ #grid:before, head:hover ~ body #grid:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      content: " ";
-      z-index: 998;
-      background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 99.9001%, transparent 99.9001%);
-      background-size: 6.66711%;
-      background-origin: content-box;
-      background-clip: content-box;
-      background-position: left top; }
+  gutter-width: 2%;
+}
+/* line 12, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#grid:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 65, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
+head {
+  display: block;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+  color: #333;
+  background: rgba(255, 255, 255, 0.25);
+}
+/* line 66, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
+head:before {
+  content: "|||";
+  display: block;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 67, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
+head:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: red;
+}
+/* line 71, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
+head:hover ~ #grid, head:hover ~ body #grid {
+  position: relative;
+}
+/* line 74, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/language/susy/_background.scss */
+head:hover ~ #grid:before, head:hover ~ body #grid:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  z-index: 998;
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 99.9001%, transparent 99.9001%);
+  background-size: 6.66711%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
 
 /* */
 /* CONTAINERS */
 /* */
+/* line 121, ../scss/styles_test.scss */
 #main_background_container {
   width: 100%;
   float: left;
@@ -482,15 +595,19 @@ html {
   height: 1000px;
   float: right;
   background-image: url("http://i.imgur.com/6l3Mm1X.jpg");
-  border: 1px solid red; }
+  border: 1px solid red;
+}
 
+/* line 129, ../scss/styles_test.scss */
 #main_heading_container {
   width: 46.66311%;
   float: left;
   margin-right: 0.00666%;
   margin-left: 15.33435%;
-  height: 77%; }
+  height: 77%;
+}
 
+/* line 134, ../scss/styles_test.scss */
 #info_container {
   float: left;
   background: rgba(200, 54, 54, 0.5);
@@ -498,21 +615,31 @@ html {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+}
 
+/* line 141, ../scss/styles_test.scss */
 #info_text_container {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 145, ../scss/styles_test.scss */
 #info_time_container {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 149, ../scss/styles_test.scss */
 #info_startday_container {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 154, ../scss/styles_test.scss */
 #portrait_frame_container {
   position: relative;
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 158, ../scss/styles_test.scss */
 #main_sidebar_container {
   /*not confining to one column*/
   position: relative;
@@ -522,8 +649,10 @@ html {
   float: left;
   margin-right: 0.00666%;
   background-color: white;
-  min-height: 78%; }
+  min-height: 78%;
+}
 
+/* line 167, ../scss/styles_test.scss */
 #CTA_top_container {
   margin-bottom: 0;
   float: left;
@@ -531,24 +660,30 @@ html {
   width: 62.21748%;
   float: left;
   margin-right: 0.00666%;
-  min-height: 17%; }
+  min-height: 17%;
+}
 
+/* line 174, ../scss/styles_test.scss */
 #main_divider {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
   background-color: #181717;
-  height: 5%; }
+  height: 5%;
+}
 
+/* line 179, ../scss/styles_test.scss */
 #CTA_text_box {
   position: relative;
   width: 22.21359%;
   float: left;
   margin-right: 0.0111%;
   background-color: white;
-  min-height: 17%; }
+  min-height: 17%;
+}
 
+/* line 185, ../scss/styles_test.scss */
 #CTA_textbox_abs {
   position: absolute;
   z-index: 3;
@@ -557,46 +692,60 @@ html {
   height: 110%;
   width: 130%;
   min-height: 28%;
-  background-color: white; }
+  background-color: white;
+}
 
 /* */
 /* IMAGES */
 /* */
+/* line 203, ../scss/styles_test.scss */
 #portrait {
   padding: 2%;
   max-width: 92%;
   transform: translate(2%);
-  transition: all .5s; }
+  transition: all .5s;
+}
 
+/* line 209, ../scss/styles_test.scss */
 #portrait:hover {
   brightness: 3;
-  transform: scale(1.06, 1.06); }
+  transform: scale(1.06, 1.06);
+}
 
+/* line 213, ../scss/styles_test.scss */
 #signature {
   position: absolute;
   top: 52%;
   left: 49%;
-  max-width: 90%; }
+  max-width: 90%;
+}
 
+/* line 222, ../scss/styles_test.scss */
 #CTA_top_text {
   width: 55.55062%;
   float: left;
   margin-right: 0.0111%;
-  color: white; }
+  color: white;
+}
 
+/* line 226, ../scss/styles_test.scss */
 #CTA_top_button_text {
   position: absolute;
   top: 50%;
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 231, ../scss/styles_test.scss */
 #aulas_container {
   background-position: center top;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: 611px; }
+  height: 611px;
+}
 
+/* line 236, ../scss/styles_test.scss */
 #aulas_container_top {
   width: 100%;
   float: left;
@@ -604,19 +753,23 @@ html {
   margin-right: 0;
   height: 40%;
   position: relative;
-  background-image: url("http://i.imgur.com/6Tv6r7F.png"); }
+  background-image: url("http://i.imgur.com/6Tv6r7F.png");
+}
 
+/* line 243, ../scss/styles_test.scss */
 #aulas_container_bottom {
   height: 60%;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  background-image: url("http://i.imgur.com/YfxsPWu.jpg"); }
+  background-image: url("http://i.imgur.com/YfxsPWu.jpg");
+}
 
 /* */
 /* TEXT */
 /* */
+/* line 254, ../scss/styles_test.scss */
 #aulas_heading_1 {
   width: 100%;
   float: left;
@@ -627,8 +780,10 @@ html {
   font-size: 80px;
   z-index: 3;
   text-align: center;
-  color: white; }
+  color: white;
+}
 
+/* line 262, ../scss/styles_test.scss */
 #aulas_heading_1:before {
   width: 100%;
   float: left;
@@ -639,8 +794,10 @@ html {
   z-index: 1;
   background-color: white;
   margin-top: 2px;
-  height: 1em; }
+  height: 1em;
+}
 
+/* line 272, ../scss/styles_test.scss */
 #aulas_heading_1:after {
   width: 100%;
   float: left;
@@ -651,8 +808,10 @@ html {
   z-index: 2;
   background-color: black;
   margin-top: -0.2em;
-  height: 1.2em; }
+  height: 1.2em;
+}
 
+/* line 282, ../scss/styles_test.scss */
 #aulas_subheading_1 {
   width: 100%;
   float: left;
@@ -662,22 +821,28 @@ html {
   text-align: center;
   vertical-align: bottom;
   bottom: 10%;
-  color: white; }
+  color: white;
+}
 
+/* line 291, ../scss/styles_test.scss */
 #aulas_heading_2 {
   text-align: center;
   font-size: 40em;
-  color: black; }
+  color: black;
+}
 
+/* line 296, ../scss/styles_test.scss */
 #aulas_subheading_2 {
   font-size: 60px;
   text-align: center;
   vertical-align: bottom;
-  color: black; }
+  color: black;
+}
 
 /* */
 /* DIVIDERS AND SHAPES */
 /* */
+/* line 308, ../scss/styles_test.scss */
 #aulas_heading_band_1 {
   width: 100%;
   float: left;
@@ -686,8 +851,10 @@ html {
   height: 35%;
   position: relative;
   top: -40%;
-  background-color: black; }
+  background-color: black;
+}
 
+/* line 316, ../scss/styles_test.scss */
 *#aulas_heading_band_1:before {
   content: "";
   position: relative;
@@ -699,13 +866,16 @@ html {
   margin-right: 0;
   height: 50%;
   display: block;
-  position: relative; }
+  position: relative;
+}
 
+/* line 327, ../scss/styles_test.scss */
 #aulas_subheading_band {
   background-color: white;
   height: 10%;
   position: relative;
-  bottom: 0%; }
+  bottom: 0%;
+}
 
 /*
 #aulas_subheading_2_band{
@@ -713,39 +883,52 @@ background-color: $binaryColor0;
 height: 5%;
 }*/
 /******* THIRD SECTION *******/
+/* line 341, ../scss/styles_test.scss */
 #aprende_container {
-  height: 373px; }
+  height: 373px;
+}
 
+/* line 345, ../scss/styles_test.scss */
 #aprende_heading_container {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
   background-color: #1B414A;
-  height: 102px; }
+  height: 102px;
+}
 
+/* line 351, ../scss/styles_test.scss */
 #aprende_subheading_container {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: 100px; }
+  height: 100px;
+}
 
 /* */
 /* TEXT */
 /* */
+/* line 362, ../scss/styles_test.scss */
 #aprende_heading {
-  color: black; }
+  color: black;
+}
 
+/* line 365, ../scss/styles_test.scss */
 #aprende_subheading {
-  color: black; }
+  color: black;
+}
 
+/* line 374, ../scss/styles_test.scss */
 #aprende_text {
-  color: white; }
+  color: white;
+}
 
 /* */
 /* DIVIDERS AND SHAPES */
 /* */
+/* line 382, ../scss/styles_test.scss */
 #aprende_band {
   width: 100%;
   float: left;
@@ -753,24 +936,30 @@ height: 5%;
   margin-right: 0;
   height: 20%;
   z-index: 1;
-  background-color: red; }
+  background-color: red;
+}
 
+/* line 390, ../scss/styles_test.scss */
 #aprende_text_effect {
-  background-color: grey; }
+  background-color: grey;
+}
 
 /*grey opacity*/
 /******* FOURTH SECTION *******/
 /* */
 /* CONTAINERS */
 /* */
+/* line 400, ../scss/styles_test.scss */
 #fale_container {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
   background-color: black;
-  height: 800px; }
+  height: 800px;
+}
 
+/* line 407, ../scss/styles_test.scss */
 #CTA_middle_container {
   background-color: white;
   margin: 0 auto;
@@ -781,12 +970,14 @@ height: 5%;
   -webkit-border-radius: 20px 20px 20px 20px;
   border: 2px solid #ffffff;
   -moz-box-sizing: content-box;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 /* */
 /* TEXT */
 /* */
 /*colors not working*/
+/* line 424, ../scss/styles_test.scss */
 #CTA_middle_text {
   margin: 0 auto;
   -webkit-transform: translate(0%, 10%);
@@ -798,131 +989,176 @@ height: 5%;
   width: 80%;
   color: black;
   text-align: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /*#CTA_middle_text:hover{
 color: $binaryColor0;
 transform: scale(1.1);
 transition: scale 1s;}*/
+/* line 442, ../scss/styles_test.scss */
 #fale_heading_1 {
-  color: black; }
+  color: black;
+}
 
+/* line 445, ../scss/styles_test.scss */
 #fale_heading_2 {
-  color: black; }
+  color: black;
+}
 
+/* line 448, ../scss/styles_test.scss */
 #fale_subheading_1 {
-  color: black; }
+  color: black;
+}
 
+/* line 451, ../scss/styles_test.scss */
 #fale_subheading_2 {
-  color: black; }
+  color: black;
+}
 
 /* */
 /* BUTTONS */
 /* */
+/* line 460, ../scss/styles_test.scss */
 #CTA_middle {
-  color: offsetColor1; }
+  color: offsetColor1;
+}
 
 /*#CTA_middle_button_effect{
 color: $binaryColor1;
 }*/
+/* line 468, ../scss/styles_test.scss */
 #fale_textbox_1 {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  background-color: white; }
+  background-color: white;
+}
 
+/* line 472, ../scss/styles_test.scss */
 #fale_textbox_2 {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  background-color: #7C1A1A; }
+  background-color: #7C1A1A;
+}
 
+/* line 476, ../scss/styles_test.scss */
 #fale_textbox_3 {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  background-color: #3F3C3C; }
+  background-color: #3F3C3C;
+}
 
 /******* FIFTH SECTION *******/
 /* */
 /* CONTAINERS */
 /* */
+/* line 487, ../scss/styles_test.scss */
 #melhor_container {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
   height: 535px;
-  background-color: black; }
+  background-color: black;
+}
 
 /* */
 /* TEXT */
 /* */
+/* line 496, ../scss/styles_test.scss */
 #melhor_heading {
-  background-color: black; }
+  background-color: black;
+}
 
+/* line 499, ../scss/styles_test.scss */
 #melhor_subheading {
-  color: white; }
+  color: white;
+}
 
 /******* SIXTH SECTION *******/
 /* */
 /* CONTAINERS */
 /* */
+/* line 511, ../scss/styles_test.scss */
 #conquistar_container {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: 900px; }
+  height: 900px;
+}
 
+/* line 515, ../scss/styles_test.scss */
 #heading_container {
-  background-color: black; }
+  background-color: black;
+}
 
+/* line 518, ../scss/styles_test.scss */
 #subheading_container {
-  background-color: white; }
+  background-color: white;
+}
 
+/* line 521, ../scss/styles_test.scss */
 #p_container {
   background-image: url("http://i.imgur.com/mWo7x03.pnge.jpg");
-  /*not showing image*/ }
+  /*not showing image*/
+}
 
+/* line 526, ../scss/styles_test.scss */
 #conquistar_heading {
-  color: white; }
+  color: white;
+}
 
+/* line 533, ../scss/styles_test.scss */
 #final_form_container {
-  background-color: white; }
+  background-color: white;
+}
 
 /* */
 /* TEXT */
 /* */
+/* line 542, ../scss/styles_test.scss */
 #final_heading {
-  color: white; }
+  color: white;
+}
 
+/* line 547, ../scss/styles_test.scss */
 #final_form_text {
-  color: black; }
+  color: black;
+}
 
+/* line 550, ../scss/styles_test.scss */
 #final_button_text {
-  color: white; }
+  color: white;
+}
 
 /* */
 /* BUTTONS */
 /* */
+/* line 559, ../scss/styles_test.scss */
 #final_form_button {
-  background-color: #D81E9D; }
+  background-color: #D81E9D;
+}
 
 /* */
 /* DIVIDERS AND SHAPES */
 /* */
+/* line 569, ../scss/styles_test.scss */
 #final_heading_band {
   background-color: black;
   height: 100px;
   color: white;
   /*set % height*/
-  /*put this at the top of the container*/ }
+  /*put this at the top of the container*/
+}
 
+/* line 576, ../scss/styles_test.scss */
 #final_emaiL_input {
-  color: white; }
-
-/*# sourceMappingURL=styles_test.css.map */
+  color: white;
+}
